@@ -14,6 +14,8 @@
 		D35626F32978925F00926239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35626F22978925F00926239 /* Assets.xcassets */; };
 		D35626F62978925F00926239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35626F42978925F00926239 /* LaunchScreen.storyboard */; };
 		D3562702297DF3C100926239 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3562701297DF3C100926239 /* ArticleTableViewCell.swift */; };
+		D3FC2CF7297F36C600BD0485 /* bottleee.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF6297F36C600BD0485 /* bottleee.png */; };
+		D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF8297F3B0600BD0485 /* default.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D35626F52978925F00926239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35626F72978925F00926239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3562701297DF3C100926239 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		D3FC2CF6297F36C600BD0485 /* bottleee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottleee.png; sourceTree = "<group>"; };
+		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				D35626F42978925F00926239 /* LaunchScreen.storyboard */,
 				D35626F72978925F00926239 /* Info.plist */,
 				D3562701297DF3C100926239 /* ArticleTableViewCell.swift */,
+				D3FC2CF6297F36C600BD0485 /* bottleee.png */,
+				D3FC2CF8297F3B0600BD0485 /* default.jpeg */,
 			);
 			path = WhiskeyPlease;
 			sourceTree = "<group>";
@@ -131,6 +137,8 @@
 				D35626F62978925F00926239 /* LaunchScreen.storyboard in Resources */,
 				D35626F32978925F00926239 /* Assets.xcassets in Resources */,
 				D35626F12978925E00926239 /* Main.storyboard in Resources */,
+				D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */,
+				D3FC2CF7297F36C600BD0485 /* bottleee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
