@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,6 +65,86 @@
             </objects>
             <point key="canvasLocation" x="2468" y="-25.862068965517242"/>
         </scene>
+        <!--Article Detail View-->
+        <scene sceneID="1Yp-X6-IQi">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="78m-Bn-jwO" customClass="ArticleDetailView" customModule="WhiskeyPlease" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zR5-32-UMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWa-PX-BxL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="had-5Q-XQJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGa-vW-Y6O">
+                                                <rect key="frame" x="166" y="719" width="42" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8F-U5-jeJ">
+                                                <rect key="frame" x="245" y="28" width="177" height="176"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiskey_and_glass_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-JX-l7k">
+                                                        <rect key="frame" x="8" y="24" width="122" height="129"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
+                                                <rect key="frame" x="8" y="15" width="359" height="415"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016.</mutableString>
+                                                <color key="textColor" name="textColor"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="8St-dE-r8X"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="had-5Q-XQJ" firstAttribute="leading" secondItem="kWa-PX-BxL" secondAttribute="leading" id="3EW-Yu-BFr"/>
+                                    <constraint firstAttribute="trailing" secondItem="had-5Q-XQJ" secondAttribute="trailing" id="5tI-eC-maa"/>
+                                    <constraint firstItem="had-5Q-XQJ" firstAttribute="top" secondItem="kWa-PX-BxL" secondAttribute="top" id="Qvs-gv-jww"/>
+                                    <constraint firstAttribute="bottom" secondItem="had-5Q-XQJ" secondAttribute="bottom" id="zQZ-s8-soQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ep6-kM-oRz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="top" secondItem="ep6-kM-oRz" secondAttribute="top" id="3Jl-Jt-FGO"/>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="trailing" secondItem="ep6-kM-oRz" secondAttribute="trailing" id="3iP-5b-dWU"/>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="leading" secondItem="ep6-kM-oRz" secondAttribute="leading" id="BN5-kh-6fv"/>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="top" secondItem="zR5-32-UMd" secondAttribute="top" id="O8U-1L-saH"/>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="trailing" secondItem="ep6-kM-oRz" secondAttribute="trailing" id="Zdh-tY-y37"/>
+                            <constraint firstAttribute="bottom" secondItem="kWa-PX-BxL" secondAttribute="bottom" id="Zj3-Xj-k6F"/>
+                            <constraint firstAttribute="bottom" secondItem="kWa-PX-BxL" secondAttribute="bottom" id="g9D-jk-ZRV"/>
+                            <constraint firstItem="had-5Q-XQJ" firstAttribute="width" secondItem="zR5-32-UMd" secondAttribute="width" id="maA-xo-8TH"/>
+                            <constraint firstItem="kWa-PX-BxL" firstAttribute="leading" secondItem="ep6-kM-oRz" secondAttribute="leading" id="qsq-IM-8Mb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PDa-4h-c29"/>
+                    <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="tekscik" destination="VGa-vW-Y6O" id="SGs-Ne-eLI"/>
+                        <outlet property="tescior" destination="4LV-hn-zCJ" id="dKX-93-6bR"/>
+                        <outlet property="whiskeyBackgroundView" destination="E8F-U5-jeJ" id="Aqv-20-5J9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9O-AR-0Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3336.8000000000002" y="-26.600985221674879"/>
+        </scene>
         <!--Item-->
         <scene sceneID="eGp-uz-4vh">
             <objects>
@@ -73,6 +154,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IBL-Tq-bEK">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="titleColor"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                             <color key="textColor" name="titleColor"/>
@@ -100,6 +182,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="titleColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="bgj-3D-s4J" kind="relationship" relationship="viewControllers" id="Nqk-7Q-FG1"/>
@@ -111,8 +194,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="whiskey_and_glass_icon.png" width="230" height="320"/>
+        <namedColor name="textColor">
+            <color red="0.62839330808080807" green="0.53220688388761761" blue="0.4841745806888425" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="titleColor">
-            <color red="0.88715277777777779" green="0.84029867066743003" blue="0.85452014177920821" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.94061710858585856" green="0.89527553719326136" blue="0.88285606809435058" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

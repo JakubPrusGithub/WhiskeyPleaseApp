@@ -14,6 +14,12 @@
 		D35626F32978925F00926239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35626F22978925F00926239 /* Assets.xcassets */; };
 		D35626F62978925F00926239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35626F42978925F00926239 /* LaunchScreen.storyboard */; };
 		D3562702297DF3C100926239 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3562701297DF3C100926239 /* ArticleTableViewCell.swift */; };
+		D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */; };
+		D365E223298044BE00CE9CFE /* corn_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D365E21F298044BE00CE9CFE /* corn_icon.png */; };
+		D365E224298044BE00CE9CFE /* barley_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D365E220298044BE00CE9CFE /* barley_icon.png */; };
+		D365E225298044BE00CE9CFE /* rye_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D365E221298044BE00CE9CFE /* rye_icon.png */; };
+		D365E226298044BE00CE9CFE /* wheat_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D365E222298044BE00CE9CFE /* wheat_icon.png */; };
+		D365E228298055FB00CE9CFE /* whiskey_and_glass_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D365E227298055FB00CE9CFE /* whiskey_and_glass_icon.png */; };
 		D3FC2CF7297F36C600BD0485 /* bottleee.png in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF6297F36C600BD0485 /* bottleee.png */; };
 		D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF8297F3B0600BD0485 /* default.jpeg */; };
 /* End PBXBuildFile section */
@@ -28,6 +34,12 @@
 		D35626F52978925F00926239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35626F72978925F00926239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3562701297DF3C100926239 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		D365E21F298044BE00CE9CFE /* corn_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corn_icon.png; sourceTree = "<group>"; };
+		D365E220298044BE00CE9CFE /* barley_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barley_icon.png; sourceTree = "<group>"; };
+		D365E221298044BE00CE9CFE /* rye_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rye_icon.png; sourceTree = "<group>"; };
+		D365E222298044BE00CE9CFE /* wheat_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheat_icon.png; sourceTree = "<group>"; };
+		D365E227298055FB00CE9CFE /* whiskey_and_glass_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiskey_and_glass_icon.png; sourceTree = "<group>"; };
 		D3FC2CF6297F36C600BD0485 /* bottleee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottleee.png; sourceTree = "<group>"; };
 		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +84,22 @@
 				D3562701297DF3C100926239 /* ArticleTableViewCell.swift */,
 				D3FC2CF6297F36C600BD0485 /* bottleee.png */,
 				D3FC2CF8297F3B0600BD0485 /* default.jpeg */,
+				D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */,
+				D365E21E298044AE00CE9CFE /* icons */,
 			);
 			path = WhiskeyPlease;
+			sourceTree = "<group>";
+		};
+		D365E21E298044AE00CE9CFE /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				D365E227298055FB00CE9CFE /* whiskey_and_glass_icon.png */,
+				D365E220298044BE00CE9CFE /* barley_icon.png */,
+				D365E21F298044BE00CE9CFE /* corn_icon.png */,
+				D365E221298044BE00CE9CFE /* rye_icon.png */,
+				D365E222298044BE00CE9CFE /* wheat_icon.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,11 +160,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D365E224298044BE00CE9CFE /* barley_icon.png in Resources */,
+				D365E223298044BE00CE9CFE /* corn_icon.png in Resources */,
 				D35626F62978925F00926239 /* LaunchScreen.storyboard in Resources */,
 				D35626F32978925F00926239 /* Assets.xcassets in Resources */,
+				D365E226298044BE00CE9CFE /* wheat_icon.png in Resources */,
 				D35626F12978925E00926239 /* Main.storyboard in Resources */,
 				D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */,
 				D3FC2CF7297F36C600BD0485 /* bottleee.png in Resources */,
+				D365E228298055FB00CE9CFE /* whiskey_and_glass_icon.png in Resources */,
+				D365E225298044BE00CE9CFE /* rye_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +183,7 @@
 				D3562702297DF3C100926239 /* ArticleTableViewCell.swift in Sources */,
 				D35626EE2978925E00926239 /* ViewController.swift in Sources */,
 				D35626EA2978925E00926239 /* AppDelegate.swift in Sources */,
+				D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */,
 				D35626EC2978925E00926239 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +342,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +377,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
