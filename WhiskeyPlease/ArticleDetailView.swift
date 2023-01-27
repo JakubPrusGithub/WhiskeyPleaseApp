@@ -10,9 +10,10 @@ import UIKit
 class ArticleDetailView: UIViewController {
 
 
-    @IBOutlet weak var tescior: UITextView!
+    
+    @IBOutlet weak var ingredients: UIView!
+    @IBOutlet weak var shortDesc: UITextView!
     @IBOutlet weak var whiskeyBackgroundView: UIView!
-    @IBOutlet weak var tekscik: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,17 +37,22 @@ class ArticleDetailView: UIViewController {
 //        navigationItem.standardAppearance = appearance
 //        navigationItem.scrollEdgeAppearance = appearance
         
-        tescior.textContainer.exclusionPaths = [UIBezierPath(rect: CGRect(x: 225, y: 0, width: 200, height: 180))]
-        tescior.layer.shadowRadius = 2.0
-        tescior.layer.shadowOpacity = 1.0
-        tescior.layer.shadowColor = UIColor.black.cgColor
-        tescior.layer.shadowOffset = CGSizeMake(-0.5, -0.5)
+        shortDesc.textContainer.exclusionPaths = [UIBezierPath(rect: CGRect(x: 225, y: 0, width: 200, height: 135))]
+        shortDesc.layer.shadowRadius = 2.0
+        shortDesc.layer.shadowOpacity = 1.0
+        shortDesc.layer.shadowColor = UIColor.black.cgColor
+        shortDesc.layer.shadowOffset = CGSizeMake(-0.5, -0.5)
         
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        tekscik.text = "lololo"
         self.view.layer.backgroundColor = UIColor(named: "detailViewBackground")?.cgColor
         title = "Johnnie Walker"
+        
+        ingredients.layer.cornerRadius = 20
+        ingredients.layer.shadowColor = UIColor.black.cgColor
+        ingredients.layer.shadowRadius = 10
+        ingredients.layer.shadowOpacity = 1
+        ingredients.layer.shadowOffset = .zero
         
         whiskeyBackgroundView.layer.cornerRadius = 20
         whiskeyBackgroundView.layer.shadowColor = UIColor.black.cgColor
