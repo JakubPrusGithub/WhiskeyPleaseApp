@@ -106,7 +106,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <view contentMode="scaleToFill" id="QN6-Bv-CJY">
-                                                <rect key="frame" x="22" y="400" width="345" height="176"/>
+                                                <rect key="frame" x="22" y="400" width="345" height="154"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wheat_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-c6-jay">
