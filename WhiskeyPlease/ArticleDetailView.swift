@@ -10,12 +10,16 @@ import UIKit
 class ArticleDetailView: UIViewController {
 
 
+    @IBOutlet weak var barlet: UIImageView!
     
+    @IBOutlet weak var whiskeyIcon: UIImageView!
     @IBOutlet weak var ingredients: UIView!
     @IBOutlet weak var shortDesc: UITextView!
     @IBOutlet weak var whiskeyBackgroundView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //sbarlet.tintColor = .brown
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds

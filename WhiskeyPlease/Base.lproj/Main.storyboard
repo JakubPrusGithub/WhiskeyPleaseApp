@@ -83,9 +83,10 @@
                                                 <rect key="frame" x="245" y="28" width="177" height="176"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiskey_and_glass_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-JX-l7k">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiskey_and_glass_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-JX-l7k">
                                                         <rect key="frame" x="8" y="24" width="122" height="129"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -98,38 +99,64 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
-                                                <rect key="frame" x="8" y="70" width="359" height="253"/>
+                                                <rect key="frame" x="8" y="70" width="359" height="281"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml (25 imp fl oz; 24 US fl oz) bottles in 2016.</string>
+                                                <mutableString key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</mutableString>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <view contentMode="scaleToFill" id="QN6-Bv-CJY">
-                                                <rect key="frame" x="22" y="400" width="345" height="154"/>
+                                                <rect key="frame" x="11" y="400" width="364" height="154"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wheat_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-c6-jay">
-                                                        <rect key="frame" x="-9" y="16" width="88" height="88"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wheat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-c6-jay">
+                                                        <rect key="frame" x="0.0" y="15" width="83" height="87"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" systemColor="quaternaryLabelColor"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rye_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-6f-ZjI">
-                                                        <rect key="frame" x="75" y="22" width="80" height="80"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rye_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-6f-ZjI">
+                                                        <rect key="frame" x="85" y="22" width="80" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" systemColor="quaternaryLabelColor"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corn_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-nm-tlZ">
-                                                        <rect key="frame" x="167" y="22" width="80" height="80"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corn_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-nm-tlZ">
+                                                        <rect key="frame" x="178" y="22" width="80" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" systemColor="quaternaryLabelColor"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barley_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-KL-wn0">
-                                                        <rect key="frame" x="257" y="22" width="80" height="80"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barley_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-KL-wn0">
+                                                        <rect key="frame" x="269" y="22" width="76" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheat       Rye         Corn         Barley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-iS-aA0">
-                                                        <rect key="frame" x="8" y="110" width="319" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-iS-aA0">
+                                                        <rect key="frame" x="11" y="111" width="58" height="24"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                                        <color key="textColor" name="detailViewBackground"/>
+                                                        <color key="textColor" systemColor="quaternaryLabelColor"/>
+                                                        <color key="highlightedColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-N7-5sj">
+                                                        <rect key="frame" x="109" y="111" width="33" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        <color key="textColor" systemColor="quaternaryLabelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-8s-qAn">
+                                                        <rect key="frame" x="197" y="111" width="43" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        <color key="textColor" systemColor="quaternaryLabelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-Cv-iRz">
+                                                        <rect key="frame" x="284" y="111" width="58" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        <color key="textColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -137,12 +164,27 @@
                                                 <color key="backgroundColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZB-K5-Zee">
-                                                <rect key="frame" x="116" y="350" width="156" height="42"/>
+                                                <rect key="frame" x="11" y="350" width="156" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                                 <color key="textColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-jD-ro1">
+                                                <rect key="frame" x="11" y="583" width="156" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                                <color key="textColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-rM-LvQ">
+                                                <rect key="frame" x="8" y="633" width="359" height="848.66666666666652"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">The legendary, original John Walker was born on July 25, 1805, on Todriggs Farm, Kilmarnock, East Ayrshire, Scotland. The farm was not far from Glasgow on the west side of the island. In 1819, John’s father died, and the family farm where little Johnnie had spent the first fourteen years of his life, was sold. Though he was still but a little lad of 15, the proceeds from the sale were used to purchase a grocery store inside Kilmarnock proper. After a short time apprenticing to learn his new trade, John took over full management of his thriving business.Even though his main trade was selling groceries, over time he became well known as the go-to supplier of tea, fine wines, and spirits. He sold all kinds of alcohol, including rum, brandy, and gin, but it was his own private label whiskey that gained him recognition in the region. Most shop owners of the day stocked single malts, with inconsistent taste and texture. Mr. Walker, being a savvy businessman, made his whiskey through blending, giving him the ability to maintain good flavor quality in every bottle. In 1833, John married Elizabeth Purves, who later gave birth to their first son, Alexander. John was known locally as a member of trade associations and the Freemasons. A major flood damaged many local businesses in 1852, and reports show that his entire stock was ruined. It took almost two years to rebuild the business, but afterward, the popularity of his signature blend continued to grow until his death in 1857. After his death, the family business was taken over by Alexander. Britain was at the center of the Industrial Revolution, and with the arrival of the railroad in 1843 on his side, Alexander Walker created a distribution network that shipped John’s whiskey worldwide. The first copyrighted blend, called “Old Highland Whisky,” hit the shelves in 1867. This recipe is a direct ancestor of what we know call Johnnie Walker Black Label. The company has continued to grow, of course, adding Blue, Double Black, Gold, and Platinum label Johnnie Walker to the line. Now among a portfolio of brands owned by a large international company, the whiskey is no longer distilled in Kilmarnock, and the original plant has been demolished. Though the facilities are gone, you’ll still find the resilient, Scottish spirit of the original Johnnie Walker in every sip.</mutableString>
+                                                <color key="textColor" name="textColor"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1500" id="8St-dE-r8X"/>
@@ -174,9 +216,11 @@
                     <navigationItem key="navigationItem" id="PDa-4h-c29"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
+                        <outlet property="barlet" destination="sj0-KL-wn0" id="5j8-r9-b3X"/>
                         <outlet property="ingredients" destination="QN6-Bv-CJY" id="wOa-qS-yrh"/>
                         <outlet property="shortDesc" destination="4LV-hn-zCJ" id="FoY-eh-Afl"/>
                         <outlet property="whiskeyBackgroundView" destination="E8F-U5-jeJ" id="Aqv-20-5J9"/>
+                        <outlet property="whiskeyIcon" destination="kKB-JX-l7k" id="qKY-3M-YUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9O-AR-0Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,20 +276,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="barley_icon.png" width="320" height="320"/>
-        <image name="corn_icon.png" width="240" height="240"/>
-        <image name="rye_icon.png" width="320" height="320"/>
-        <image name="wheat_icon.png" width="112" height="320"/>
-        <image name="whiskey_and_glass_icon.png" width="230" height="320"/>
-        <namedColor name="detailViewBackground">
-            <color red="0.12156862745098039" green="0.12156862745098039" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <image name="barley_icon" width="320" height="320"/>
+        <image name="corn_icon" width="320" height="320"/>
+        <image name="rye_icon" width="320" height="320"/>
+        <image name="wheat_icon" width="112" height="320"/>
+        <image name="whiskey_and_glass_icon" width="230" height="320"/>
         <namedColor name="textColor">
             <color red="0.62745098039215685" green="0.52941176470588236" blue="0.4823529411764706" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="titleColor">
             <color red="0.93725490196078431" green="0.89411764705882357" blue="0.88235294117647056" alpha="0.94999998807907104" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
