@@ -8,9 +8,12 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    
+    let articles = LoadArticles()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         overrideUserInterfaceStyle = .dark
         navigationController?.navigationBar.prefersLargeTitles = true
         title="Articles"
@@ -34,13 +37,12 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Article", for: indexPath) as! ArticleTableViewCell
         
-        cell.title.text = "Johnnie Walker"
-        cell.thumbnail.image = UIImage()
-        cell.desc.text = "Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016."
+        cell.title.text = articles.allArticles[indexPath.row].articleTitle
+        cell.desc.text = articles.allArticles[indexPath.row].articleDescription
         cell.backgroundColor = .clear
-        let thumbnail = UIImage(named: "default.jpeg")
         cell.title.textColor = UIColor(named: "detailViewTitleColor")
         cell.desc.textColor = UIColor(named: "textColor")
+        let thumbnail = UIImage(named: "\(articles.allArticles[indexPath.row].articleIcon)")
         cell.thumbnail.image = thumbnail
         return cell
     }
@@ -48,11 +50,12 @@ class ViewController: UITableViewController {
         return 200
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return articles.allArticles.count
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? ArticleDetailView {
+            vc.detailedArticle = articles.allArticles[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }

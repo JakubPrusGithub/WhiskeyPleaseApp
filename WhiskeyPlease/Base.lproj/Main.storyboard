@@ -101,7 +101,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
                                                 <rect key="frame" x="8" y="70" width="359" height="281"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</mutableString>
+                                                <string key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</string>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -128,7 +128,7 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barley_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-KL-wn0">
                                                         <rect key="frame" x="269" y="22" width="76" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="tintColor" systemColor="quaternaryLabelColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-iS-aA0">
                                                         <rect key="frame" x="11" y="111" width="58" height="24"/>
@@ -144,19 +144,19 @@
                                                         <color key="textColor" systemColor="quaternaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-8s-qAn">
-                                                        <rect key="frame" x="197" y="111" width="43" height="24"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                                        <color key="textColor" systemColor="quaternaryLabelColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-Cv-iRz">
                                                         <rect key="frame" x="284" y="111" width="58" height="24"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                                        <color key="textColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-8s-qAn">
+                                                        <rect key="frame" x="197" y="111" width="43" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                        <color key="textColor" systemColor="quaternaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -180,7 +180,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-rM-LvQ">
                                                 <rect key="frame" x="8" y="633" width="359" height="848.66666666666652"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">The legendary, original John Walker was born on July 25, 1805, on Todriggs Farm, Kilmarnock, East Ayrshire, Scotland. The farm was not far from Glasgow on the west side of the island. In 1819, John’s father died, and the family farm where little Johnnie had spent the first fourteen years of his life, was sold. Though he was still but a little lad of 15, the proceeds from the sale were used to purchase a grocery store inside Kilmarnock proper. After a short time apprenticing to learn his new trade, John took over full management of his thriving business.Even though his main trade was selling groceries, over time he became well known as the go-to supplier of tea, fine wines, and spirits. He sold all kinds of alcohol, including rum, brandy, and gin, but it was his own private label whiskey that gained him recognition in the region. Most shop owners of the day stocked single malts, with inconsistent taste and texture. Mr. Walker, being a savvy businessman, made his whiskey through blending, giving him the ability to maintain good flavor quality in every bottle. In 1833, John married Elizabeth Purves, who later gave birth to their first son, Alexander. John was known locally as a member of trade associations and the Freemasons. A major flood damaged many local businesses in 1852, and reports show that his entire stock was ruined. It took almost two years to rebuild the business, but afterward, the popularity of his signature blend continued to grow until his death in 1857. After his death, the family business was taken over by Alexander. Britain was at the center of the Industrial Revolution, and with the arrival of the railroad in 1843 on his side, Alexander Walker created a distribution network that shipped John’s whiskey worldwide. The first copyrighted blend, called “Old Highland Whisky,” hit the shelves in 1867. This recipe is a direct ancestor of what we know call Johnnie Walker Black Label. The company has continued to grow, of course, adding Blue, Double Black, Gold, and Platinum label Johnnie Walker to the line. Now among a portfolio of brands owned by a large international company, the whiskey is no longer distilled in Kilmarnock, and the original plant has been demolished. Though the facilities are gone, you’ll still find the resilient, Scottish spirit of the original Johnnie Walker in every sip.</mutableString>
+                                                <string key="text">The legendary, original John Walker was born on July 25, 1805, on Todriggs Farm, Kilmarnock, East Ayrshire, Scotland. The farm was not far from Glasgow on the west side of the island. In 1819, John’s father died, and the family farm where little Johnnie had spent the first fourteen years of his life, was sold. Though he was still but a little lad of 15, the proceeds from the sale were used to purchase a grocery store inside Kilmarnock proper. After a short time apprenticing to learn his new trade, John took over full management of his thriving business.Even though his main trade was selling groceries, over time he became well known as the go-to supplier of tea, fine wines, and spirits. He sold all kinds of alcohol, including rum, brandy, and gin, but it was his own private label whiskey that gained him recognition in the region. Most shop owners of the day stocked single malts, with inconsistent taste and texture. Mr. Walker, being a savvy businessman, made his whiskey through blending, giving him the ability to maintain good flavor quality in every bottle. In 1833, John married Elizabeth Purves, who later gave birth to their first son, Alexander. John was known locally as a member of trade associations and the Freemasons. A major flood damaged many local businesses in 1852, and reports show that his entire stock was ruined. It took almost two years to rebuild the business, but afterward, the popularity of his signature blend continued to grow until his death in 1857. After his death, the family business was taken over by Alexander. Britain was at the center of the Industrial Revolution, and with the arrival of the railroad in 1843 on his side, Alexander Walker created a distribution network that shipped John’s whiskey worldwide. The first copyrighted blend, called “Old Highland Whisky,” hit the shelves in 1867. This recipe is a direct ancestor of what we know call Johnnie Walker Black Label. The company has continued to grow, of course, adding Blue, Double Black, Gold, and Platinum label Johnnie Walker to the line. Now among a portfolio of brands owned by a large international company, the whiskey is no longer distilled in Kilmarnock, and the original plant has been demolished. Though the facilities are gone, you’ll still find the resilient, Scottish spirit of the original Johnnie Walker in every sip.</string>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -216,9 +216,17 @@
                     <navigationItem key="navigationItem" id="PDa-4h-c29"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
-                        <outlet property="barlet" destination="sj0-KL-wn0" id="5j8-r9-b3X"/>
+                        <outlet property="barleyIcon" destination="sj0-KL-wn0" id="nqv-Qq-2xp"/>
+                        <outlet property="barleyText" destination="Maf-Cv-iRz" id="UMd-VE-fHm"/>
+                        <outlet property="cornIcon" destination="IFn-nm-tlZ" id="hkN-2r-6qP"/>
+                        <outlet property="cornText" destination="abI-8s-qAn" id="lx7-wy-kW6"/>
+                        <outlet property="historyText" destination="cwy-rM-LvQ" id="ktU-Rm-ujJ"/>
                         <outlet property="ingredients" destination="QN6-Bv-CJY" id="wOa-qS-yrh"/>
+                        <outlet property="ryeIcon" destination="qvP-6f-ZjI" id="GAD-DR-Tez"/>
+                        <outlet property="ryeText" destination="3Ze-N7-5sj" id="Ext-Ko-bx1"/>
                         <outlet property="shortDesc" destination="4LV-hn-zCJ" id="FoY-eh-Afl"/>
+                        <outlet property="wheatIcon" destination="Qdh-c6-jay" id="S3g-pB-8Lg"/>
+                        <outlet property="wheatText" destination="Z4p-iS-aA0" id="c6F-4f-4M6"/>
                         <outlet property="whiskeyBackgroundView" destination="E8F-U5-jeJ" id="Aqv-20-5J9"/>
                         <outlet property="whiskeyIcon" destination="kKB-JX-l7k" id="qKY-3M-YUC"/>
                     </connections>
@@ -247,6 +255,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="enG-QN-OQi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="iLx-je-ypM" kind="relationship" relationship="rootViewController" id="iuS-wA-nh2"/>
                     </connections>
@@ -287,6 +298,9 @@
         <namedColor name="titleColor">
             <color red="0.93725490196078431" green="0.89411764705882357" blue="0.88235294117647056" alpha="0.94999998807907104" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

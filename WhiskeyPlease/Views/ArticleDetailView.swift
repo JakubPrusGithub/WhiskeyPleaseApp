@@ -9,17 +9,27 @@ import UIKit
 
 class ArticleDetailView: UIViewController {
 
-
-    @IBOutlet weak var barlet: UIImageView!
-    
+    @IBOutlet weak var historyText: UITextView!
     @IBOutlet weak var whiskeyIcon: UIImageView!
     @IBOutlet weak var ingredients: UIView!
     @IBOutlet weak var shortDesc: UITextView!
     @IBOutlet weak var whiskeyBackgroundView: UIView!
+    
+    @IBOutlet weak var wheatIcon: UIImageView!
+    @IBOutlet weak var wheatText: UILabel!
+    @IBOutlet weak var ryeIcon: UIImageView!
+    @IBOutlet weak var ryeText: UILabel!
+    @IBOutlet weak var cornIcon: UIImageView!
+    @IBOutlet weak var cornText: UILabel!
+    @IBOutlet weak var barleyIcon: UIImageView!
+    @IBOutlet weak var barleyText: UILabel!
+    
+    var detailedArticle: Article?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sbarlet.tintColor = .brown
+        showArticle()
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
@@ -50,7 +60,6 @@ class ArticleDetailView: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         self.view.layer.backgroundColor = UIColor(named: "detailViewBackground")?.cgColor
-        title = "Johnnie Walker"
         
         ingredients.layer.cornerRadius = 20
         ingredients.layer.shadowColor = UIColor.black.cgColor
@@ -63,6 +72,30 @@ class ArticleDetailView: UIViewController {
         whiskeyBackgroundView.layer.shadowRadius = 10
         whiskeyBackgroundView.layer.shadowOpacity = 1
         whiskeyBackgroundView.layer.shadowOffset = .zero
+    }
+    
+    func showArticle(){
+        guard let thisArticle = detailedArticle else { return }
+        shortDesc.text = thisArticle.articleDescription
+        historyText.text = thisArticle.articleHistory
+        title = thisArticle.articleTitle
+        
+        if thisArticle.articleIngredients.contains("wheat") {
+            wheatIcon.tintColor = UIColor(named: "detailViewBackground")
+            wheatText.textColor = UIColor(named: "detailViewBackground")
+        }
+        if thisArticle.articleIngredients.contains("rye") {
+            ryeIcon.tintColor = UIColor(named: "detailViewBackground")
+            ryeText.textColor = UIColor(named: "detailViewBackground")
+        }
+        if thisArticle.articleIngredients.contains("corn") {
+            cornIcon.tintColor = UIColor(named: "detailViewBackground")
+            cornText.textColor = UIColor(named: "detailViewBackground")
+        }
+        if thisArticle.articleIngredients.contains("barley") {
+            barleyIcon.tintColor = UIColor(named: "detailViewBackground")
+            barleyText.textColor = UIColor(named: "detailViewBackground")
+        }
     }
     
 }
