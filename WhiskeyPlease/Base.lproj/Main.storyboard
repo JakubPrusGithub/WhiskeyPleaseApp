@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -235,11 +236,29 @@
             </objects>
             <point key="canvasLocation" x="3336.8000000000002" y="-26.600985221674879"/>
         </scene>
-        <!--Item-->
+        <!--My list-->
+        <scene sceneID="PFu-4K-tBO">
+            <objects>
+                <viewController id="gF0-46-ofo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YN9-Ls-kOR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Kaw-5S-tLP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="My list" image="list.star" catalog="system" id="g0F-rZ-dpN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfs-zB-5FW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="-701"/>
+        </scene>
+        <!--Articles-->
         <scene sceneID="eGp-uz-4vh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bgj-3D-s4J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lJ4-tS-Emm"/>
+                    <tabBarItem key="tabBarItem" title="Articles" id="lJ4-tS-Emm">
+                        <imageReference key="image" image="newspaper" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IBL-Tq-bEK">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
@@ -266,6 +285,22 @@
             </objects>
             <point key="canvasLocation" x="1559.4202898550725" y="-25.446428571428569"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="Ohy-qP-Uqb">
+            <objects>
+                <viewController id="FiD-99-QTM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kvh-NX-lvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b1P-pz-xUJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Profile" image="person" catalog="system" id="Tlv-kq-mPV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYB-Fr-ADL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="716"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kZ9-Zy-CZU">
             <objects>
@@ -274,11 +309,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lWV-bQ-3nK">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="titleColor"/>
+                        <color key="selectedImageTintColor" red="0.83529412749999998" green="0.73333334920000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="bgj-3D-s4J" kind="relationship" relationship="viewControllers" id="Nqk-7Q-FG1"/>
+                        <segue destination="gF0-46-ofo" kind="relationship" relationship="viewControllers" id="e67-1k-G8M"/>
+                        <segue destination="FiD-99-QTM" kind="relationship" relationship="viewControllers" id="etz-CM-geD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkr-yw-bxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -289,6 +327,9 @@
     <resources>
         <image name="barley_icon" width="320" height="320"/>
         <image name="corn_icon" width="320" height="320"/>
+        <image name="list.star" catalog="system" width="128" height="95"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="rye_icon" width="320" height="320"/>
         <image name="wheat_icon" width="112" height="320"/>
         <image name="whiskey_and_glass_icon" width="230" height="320"/>
