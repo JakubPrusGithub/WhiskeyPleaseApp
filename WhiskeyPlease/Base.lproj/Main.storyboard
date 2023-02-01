@@ -102,7 +102,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
                                                 <rect key="frame" x="8" y="70" width="359" height="281"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</string>
+                                                <mutableString key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</mutableString>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -236,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="3336.8000000000002" y="-26.600985221674879"/>
         </scene>
-        <!--My list-->
+        <!--Whiskey-->
         <scene sceneID="PFu-4K-tBO">
             <objects>
                 <viewController id="gF0-46-ofo" sceneMemberID="viewController">
@@ -246,7 +246,7 @@
                         <viewLayoutGuide key="safeArea" id="Kaw-5S-tLP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="My list" image="list.star" catalog="system" id="g0F-rZ-dpN"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Whiskey" image="list.star" catalog="system" id="g0F-rZ-dpN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfs-zB-5FW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
