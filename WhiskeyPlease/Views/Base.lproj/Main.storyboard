@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -102,7 +103,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
                                                 <rect key="frame" x="8" y="70" width="359" height="281"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</mutableString>
+                                                <string key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</string>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -234,23 +235,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9O-AR-0Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3336.8000000000002" y="-26.600985221674879"/>
+            <point key="canvasLocation" x="4260" y="227.58620689655174"/>
         </scene>
-        <!--Whiskey-->
-        <scene sceneID="PFu-4K-tBO">
+        <!--My Whiskeys View-->
+        <scene sceneID="MkB-F4-qIx">
             <objects>
-                <viewController id="gF0-46-ofo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YN9-Ls-kOR">
+                <collectionViewController id="vMP-Ws-5Rz" customClass="MyWhiskeysView" customModule="WhiskeyPlease" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uOT-w2-GNl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Kaw-5S-tLP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Whiskey" image="list.star" catalog="system" id="g0F-rZ-dpN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zfs-zB-5FW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I8R-yL-fgK">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oxk-G7-K06">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sxW-om-cJL">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vMP-Ws-5Rz" id="Jx0-0z-oAx"/>
+                            <outlet property="delegate" destination="vMP-Ws-5Rz" id="dQ4-cl-2EI"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Spn-62-KuZ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOv-Gz-ss1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="-701"/>
+            <point key="canvasLocation" x="2468" y="-701"/>
         </scene>
         <!--Articles-->
         <scene sceneID="eGp-uz-4vh">
@@ -285,21 +305,21 @@
             </objects>
             <point key="canvasLocation" x="1559.4202898550725" y="-25.446428571428569"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View-->
         <scene sceneID="Ohy-qP-Uqb">
             <objects>
-                <viewController id="FiD-99-QTM" sceneMemberID="viewController">
+                <viewController id="FiD-99-QTM" customClass="ProfileView" customModule="WhiskeyPlease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kvh-NX-lvn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="b1P-pz-xUJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Profile" image="person" catalog="system" id="Tlv-kq-mPV"/>
+                    <navigationItem key="navigationItem" id="RLP-g8-Ruo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYB-Fr-ADL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="716"/>
+            <point key="canvasLocation" x="2500" y="715.27093596059115"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kZ9-Zy-CZU">
@@ -315,13 +335,67 @@
                     </tabBar>
                     <connections>
                         <segue destination="bgj-3D-s4J" kind="relationship" relationship="viewControllers" id="Nqk-7Q-FG1"/>
-                        <segue destination="gF0-46-ofo" kind="relationship" relationship="viewControllers" id="e67-1k-G8M"/>
-                        <segue destination="FiD-99-QTM" kind="relationship" relationship="viewControllers" id="etz-CM-geD"/>
+                        <segue destination="Fzh-xs-Wmx" kind="relationship" relationship="viewControllers" id="e67-1k-G8M"/>
+                        <segue destination="pDe-YP-kuS" kind="relationship" relationship="viewControllers" id="etz-CM-geD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkr-yw-bxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="649.27536231884062" y="-25.446428571428569"/>
+        </scene>
+        <!--My Whiskeys-->
+        <scene sceneID="Df6-1N-mTY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fzh-xs-Wmx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="My Whiskeys" image="list.star" catalog="system" id="g0F-rZ-dpN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l0D-mh-Fjr">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                            <color key="textColor" name="titleColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                            <color key="textColor" name="titleColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vMP-Ws-5Rz" kind="relationship" relationship="rootViewController" id="6XZ-cc-DgF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4d5-VE-iAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="-701.23152709359613"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="sAT-Ie-seR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pDe-YP-kuS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Profile" image="person" catalog="system" id="Tlv-kq-mPV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uJ-aO-Zf1">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                            <color key="textColor" name="titleColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                            <color key="textColor" name="titleColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FiD-99-QTM" kind="relationship" relationship="rootViewController" id="ocy-Sj-TAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eG7-et-zrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.5999999999999" y="715.27093596059115"/>
         </scene>
     </scenes>
     <resources>
