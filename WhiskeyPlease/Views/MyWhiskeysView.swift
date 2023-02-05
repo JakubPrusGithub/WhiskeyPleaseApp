@@ -13,6 +13,7 @@ class MyWhiskeysView: UICollectionViewController {
         super.viewDidLoad()
         title="My Whiskeys"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhiskey))
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = collectionView.frame
@@ -29,6 +30,10 @@ class MyWhiskeysView: UICollectionViewController {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
+    }
+    
+    @objc func addWhiskey(){
+        // nowa whiskey do recenzji
     }
     
 }

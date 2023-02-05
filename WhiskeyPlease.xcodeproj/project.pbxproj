@@ -29,6 +29,7 @@
 		D35A6A46298AECFB00E4CAD2 /* thefamousgrouseIcon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D35A6A41298AECFB00E4CAD2 /* thefamousgrouseIcon.jpeg */; };
 		D35A6A62298C712100E4CAD2 /* MyWhiskeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */; };
 		D35A6A64298C7A2C00E4CAD2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A6A63298C7A2C00E4CAD2 /* ProfileView.swift */; };
+		D35A6A6629906A1300E4CAD2 /* ReviewedWhiskey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */; };
 		D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */; };
 		D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF8297F3B0600BD0485 /* default.jpeg */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		D35A6A41298AECFB00E4CAD2 /* thefamousgrouseIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thefamousgrouseIcon.jpeg; sourceTree = "<group>"; };
 		D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWhiskeysView.swift; sourceTree = "<group>"; };
 		D35A6A63298C7A2C00E4CAD2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewedWhiskey.swift; sourceTree = "<group>"; };
 		D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				D35A6A2F2989935800E4CAD2 /* JSON */,
 				D35A6A2E2989933B00E4CAD2 /* Views */,
 				D35626E92978925E00926239 /* AppDelegate.swift */,
+				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
 				D35626EB2978925E00926239 /* SceneDelegate.swift */,
 				D35626F22978925F00926239 /* Assets.xcassets */,
 				D35626F42978925F00926239 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 				D35A6A62298C712100E4CAD2 /* MyWhiskeysView.swift in Sources */,
 				D3562702297DF3C100926239 /* ArticleTableViewCell.swift in Sources */,
 				D35626EE2978925E00926239 /* ViewController.swift in Sources */,
+				D35A6A6629906A1300E4CAD2 /* ReviewedWhiskey.swift in Sources */,
 				D35626EA2978925E00926239 /* AppDelegate.swift in Sources */,
 				D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */,
 				D35A6A2D29898CCE00E4CAD2 /* ArticleStructs.swift in Sources */,
