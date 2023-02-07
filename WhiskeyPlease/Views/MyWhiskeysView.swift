@@ -9,11 +9,15 @@ import UIKit
 
 class MyWhiskeysView: UICollectionViewController {
 
+    var allUserReviewedWhiskey = AllReviewedWhiskeys()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title="My Whiskeys"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhiskey))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "titleColor")
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = collectionView.frame
@@ -30,6 +34,23 @@ class MyWhiskeysView: UICollectionViewController {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewedWhiskeyCell", for: indexPath) as! ReviewedWhiskeyCollectionViewCell
+        cell.layer.backgroundColor = UIColor(named: "ingredientsBackgroundColor")?.cgColor
+        cell.layer.cornerRadius = 20
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowRadius = 10
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowOffset = .zero
+        return cell
+    }
+    
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return allUserReviewedWhiskey.allReviewedWhiskeys.count*5
     }
     
     @objc func addWhiskey(){
