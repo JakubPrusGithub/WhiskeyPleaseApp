@@ -33,6 +33,7 @@
 		D35A6A6829916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */; };
 		D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */; };
 		D39491BD2992F9E300DA3A13 /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39491BC2992F9E300DA3A13 /* RatingController.swift */; };
+		D39491BF2993AA8E00DA3A13 /* AddingReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */; };
 		D3FC2CF9297F3B0600BD0485 /* default.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D3FC2CF8297F3B0600BD0485 /* default.jpeg */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewedWhiskeyCollectionViewCell.swift; sourceTree = "<group>"; };
 		D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		D39491BC2992F9E300DA3A13 /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
+		D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingReviewViewController.swift; sourceTree = "<group>"; };
 		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
 				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
 				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
+				D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				D35626EA2978925E00926239 /* AppDelegate.swift in Sources */,
 				D365E21D2980328F00CE9CFE /* ArticleDetailView.swift in Sources */,
 				D35A6A2D29898CCE00E4CAD2 /* ArticleStructs.swift in Sources */,
+				D39491BF2993AA8E00DA3A13 /* AddingReviewViewController.swift in Sources */,
 				D35626EC2978925E00926239 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

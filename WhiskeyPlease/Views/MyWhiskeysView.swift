@@ -54,7 +54,15 @@ class MyWhiskeysView: UICollectionViewController {
     }
     
     @objc func addWhiskey(){
-        // nowa whiskey do recenzji
+        lazy var reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet")
+        if let sheet = reviewSheet.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 20
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+        }
+        present(reviewSheet, animated: true)
+        // if let vc = storyboard?.instantiateViewController(withIdentifier: "ReviewSheet") as? AddingReviewViewController {
     }
     
 }
