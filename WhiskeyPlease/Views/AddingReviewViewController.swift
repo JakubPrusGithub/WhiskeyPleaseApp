@@ -14,7 +14,17 @@ class AddingReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.backgroundColor = UIColor.black
-        //NameText.text = "Name"
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        let myGrayLighter = UIColor(red: 30.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
+        let myGrayDarker = UIColor(red: 15.0/255.0, green: 15.0/255.0, blue: 10.0/255.0, alpha: 1.0)
+        gradientLayer.colors = [
+            myGrayDarker.cgColor,
+            myGrayLighter.cgColor
+        ]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

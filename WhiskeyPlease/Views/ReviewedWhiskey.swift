@@ -32,14 +32,10 @@ struct ReviewedWhiskey: Codable {
     var nose = 1
     var finish = 1
     var presence = 1
+    var impression = 1
     
-    // all evaluation criteria summed up and multiplied by 5
-    var overall = 20
-    
-    // $
-    var whiskeyCost = 99
-    
-    var userReview = ""
-    
-    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 1, nose: 2, finish: 3, presence: 4, overall: 50, whiskeyCost: 99, userReview: "This is my favourite whiskey!")
+    // all evaluation criteria summed up and devided by 5
+    var overall: Double = 1.0
+
+    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 1, nose: 2, finish: 3, presence: 4, impression: 5, overall: 3.0)
 }
