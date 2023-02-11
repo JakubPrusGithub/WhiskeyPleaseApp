@@ -44,13 +44,13 @@ class MyWhiskeysView: UICollectionViewController {
         cell.layer.shadowRadius = 10
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = .zero
+        cell.whiskeyNameCell.text = allUserReviewedWhiskey.allReviewedWhiskeys[indexPath.row].whiskeyName
+        cell.whiskeyOverallRating.text = String(allUserReviewedWhiskey.allReviewedWhiskeys[indexPath.row].overall)
         return cell
     }
     
-    
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return allUserReviewedWhiskey.allReviewedWhiskeys.count*5
+        return allUserReviewedWhiskey.allReviewedWhiskeys.count
     }
     
     @objc func addWhiskey(){

@@ -9,4 +9,6 @@ import UIKit
 
 class ReviewedWhiskeyCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var whiskeyNameCell: UILabel!
+    @IBOutlet weak var whiskeyOverallRating: UILabel!
 }

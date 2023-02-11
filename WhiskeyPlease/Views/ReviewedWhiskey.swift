@@ -27,15 +27,15 @@ struct ReviewedWhiskey: Codable {
     
     var whiskeyName = ""
     
-    // 1-5 rating
-    var taste = 1
-    var nose = 1
-    var finish = 1
-    var presence = 1
-    var impression = 1
+    // 1-10 rating
+    var taste: Int
+    var nose: Int
+    var finish: Int
+    var presence: Int
+    var impression: Int
     
-    // all evaluation criteria summed up and devided by 5
-    var overall: Double = 1.0
+    // all evaluation criteria summed up and doubled
+    var overall: Int
 
-    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 1, nose: 2, finish: 3, presence: 4, impression: 5, overall: 3.0)
+    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 2, nose: 4, finish: 6, presence: 8, impression: 10, overall: 60)
 }
