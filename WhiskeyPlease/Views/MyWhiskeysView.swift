@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MyWhiskeysView: UICollectionViewController {
-
+class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
+    
     var allUserReviewedWhiskey = AllReviewedWhiskeys()
     
     override func viewDidLoad() {
@@ -18,7 +18,9 @@ class MyWhiskeysView: UICollectionViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhiskey))
         navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "titleColor")
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = collectionView.frame
         let myGrayLighter = UIColor(red: 30.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
@@ -34,6 +36,7 @@ class MyWhiskeysView: UICollectionViewController {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
+        print(allUserReviewedWhiskey.allReviewedWhiskeys.count)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -54,15 +57,19 @@ class MyWhiskeysView: UICollectionViewController {
     }
     
     @objc func addWhiskey(){
-        lazy var reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet")
+        lazy var reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
         if let sheet = reviewSheet.sheetPresentationController {
             sheet.detents = [.large()]
             sheet.prefersGrabberVisible = true
             sheet.preferredCornerRadius = 20
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
         }
+        reviewSheet.delegate = self
         present(reviewSheet, animated: true)
-        // if let vc = storyboard?.instantiateViewController(withIdentifier: "ReviewSheet") as? AddingReviewViewController {
     }
     
+    func updateViewWithNewReview(newReview: ReviewedWhiskey) {
+        allUserReviewedWhiskey.allReviewedWhiskeys.append(newReview)
+        collectionView.reloadData()
+    }
 }

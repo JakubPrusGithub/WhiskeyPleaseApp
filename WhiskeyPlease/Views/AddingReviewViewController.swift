@@ -7,25 +7,37 @@
 
 import UIKit
 
+protocol UpdateViewWithNewReview{
+    func updateViewWithNewReview(newReview: ReviewedWhiskey)
+}
+
 class AddingReviewViewController: UIViewController {
     
-    
     @IBOutlet weak var whiskeyName: UITextField!
+    @IBOutlet weak var tasteRating: RatingController!
+    @IBOutlet weak var noseRating: RatingController!
+    @IBOutlet weak var finishRating: RatingController!
+    @IBOutlet weak var presenceRating: RatingController!
+    @IBOutlet weak var impressionRating: RatingController!
+    
+    var delegate: UpdateViewWithNewReview?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        let myGrayLighter = UIColor(red: 30.0/255.0, green: 30.0/255.0, blue: 30.0/255.0, alpha: 1.0)
-//        let myGrayDarker = UIColor(red: 15.0/255.0, green: 15.0/255.0, blue: 10.0/255.0, alpha: 1.0)
-//        gradientLayer.colors = [
-//            myGrayDarker.cgColor,
-//            myGrayLighter.cgColor
-//        ]
-//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-//        view.layer.insertSublayer(gradientLayer, at: 0)
         view.layer.backgroundColor = UIColor(named: "ingredientsBackgroundColor")?.cgColor
         whiskeyName.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
+        
+    }
+    
+    @IBAction func doneButton(_ sender: Any) {
+        guard let reviewedWhiskeyName = whiskeyName.text else {return}
+        let taste = tasteRating.starsRating
+        let nose = noseRating.starsRating
+        let finish = finishRating.starsRating
+        let presence = presenceRating.starsRating
+        let impression = impressionRating.starsRating
+        let newReview = ReviewedWhiskey(whiskeyName: reviewedWhiskeyName, taste: taste, nose: nose, finish: finish, presence: presence, impression: impression)
+        delegate?.updateViewWithNewReview(newReview: newReview)
+        dismiss(animated: true)
     }
 }

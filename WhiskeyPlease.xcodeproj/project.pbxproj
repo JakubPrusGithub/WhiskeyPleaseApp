@@ -122,8 +122,8 @@
 				D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */,
 				D35626EF2978925E00926239 /* Main.storyboard */,
 				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
-				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
 				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
+				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
 				D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */,
 			);
 			path = Views;

@@ -25,7 +25,7 @@ class AllReviewedWhiskeys {
 
 struct ReviewedWhiskey: Codable {
     
-    var whiskeyName = ""
+    var whiskeyName: String
     
     // 1-10 rating
     var taste: Int
@@ -35,7 +35,9 @@ struct ReviewedWhiskey: Codable {
     var impression: Int
     
     // all evaluation criteria summed up and doubled
-    var overall: Int
+    var overall: Int {
+        return (taste+nose+finish+presence+impression)*2
+    }
 
-    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 2, nose: 4, finish: 6, presence: 8, impression: 10, overall: 60)
+    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 2, nose: 4, finish: 6, presence: 8, impression: 10)
 }
