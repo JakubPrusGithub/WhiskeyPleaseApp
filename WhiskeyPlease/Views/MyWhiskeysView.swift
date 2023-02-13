@@ -55,7 +55,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
     }
     
     @objc func addWhiskey(){
-        lazy var reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
+        let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
         if let sheet = reviewSheet.sheetPresentationController {
             sheet.detents = [.large()]
             sheet.prefersGrabberVisible = true

@@ -78,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGb-x8-84X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468" y="-25.862068965517242"/>
+            <point key="canvasLocation" x="2500" y="-26"/>
         </scene>
         <!--Article Detail View-->
         <scene sceneID="1Yp-X6-IQi">
@@ -247,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9O-AR-0Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="228"/>
+            <point key="canvasLocation" x="3337" y="227"/>
         </scene>
         <!--My Whiskeys View-->
         <scene sceneID="MkB-F4-qIx">
@@ -275,13 +275,13 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiskeyCell_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Q4F-aK-MAy">
                                             <rect key="frame" x="8" y="0.0" width="142" height="296.33333333333331"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVP-jg-1hU">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVP-jg-1hU">
                                             <rect key="frame" x="22" y="210" width="113" height="21"/>
                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
                                             <color key="textColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-zd-GF8">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-zd-GF8">
                                             <rect key="frame" x="42.333333333333336" y="239.00000000000003" width="73.333333333333314" height="47.333333333333343"/>
                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
                                             <color key="textColor" name="detailViewTitleColor"/>
@@ -289,7 +289,7 @@
                                             <color key="shadowColor" name="detailViewBackground"/>
                                             <size key="shadowOffset" width="1" height="1"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Johnnie Walker Black Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-9s-NLO">
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Johnnie Walker Black Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-9s-NLO">
                                             <rect key="frame" x="15.666666666666671" y="115" width="126.00000000000001" height="80"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="80" id="5PD-Ix-fGi"/>
@@ -332,7 +332,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOv-Gz-ss1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468" y="-701.23152709359613"/>
+            <point key="canvasLocation" x="2502" y="-711"/>
         </scene>
         <!--Adding Review View Controller-->
         <scene sceneID="yZ1-Pt-7hl">
@@ -343,7 +343,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whiskey name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHM-eN-n3w">
-                                <rect key="frame" x="119.00000000000001" y="143" width="144.33333333333337" height="26.666666666666657"/>
+                                <rect key="frame" x="115.33333333333333" y="143" width="144.33333333333337" height="26.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -351,12 +351,12 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-mR-QJn">
-                                <rect key="frame" x="20" y="177.66666666666666" width="342.33333333333331" height="34"/>
+                                <rect key="frame" x="20" y="177.66666666666666" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-RF-QHz">
-                                <rect key="frame" x="167" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
+                                <rect key="frame" x="163.33333333333334" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -364,7 +364,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWL-Sa-1Bv">
-                                <rect key="frame" x="168.33333333333334" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
+                                <rect key="frame" x="164.66666666666666" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -372,7 +372,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6H-xs-pJ7">
-                                <rect key="frame" x="163" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
+                                <rect key="frame" x="159.33333333333334" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -380,7 +380,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3H-Mg-rWW">
-                                <rect key="frame" x="150.33333333333334" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
+                                <rect key="frame" x="146.66666666666666" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -388,7 +388,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-YG-11X">
-                                <rect key="frame" x="140.66666666666666" y="641.66666666666663" width="101" height="24.333333333333371"/>
+                                <rect key="frame" x="137" y="641.66666666666663" width="101" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -396,7 +396,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your new review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-2x-gOX">
-                                <rect key="frame" x="78.333333333333314" y="87" width="226" height="36"/>
+                                <rect key="frame" x="74.666666666666686" y="87" width="226" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -833,7 +833,7 @@
                                 <color key="tintColor" red="0.54509806630000002" green="0.37254902719999999" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-HZ-z53">
-                                <rect key="frame" x="156.33333333333334" y="714" width="70" height="44"/>
+                                <rect key="frame" x="152.66666666666666" y="714" width="70" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Vkk-cE-nP6"/>
                                     <constraint firstAttribute="width" constant="70" id="pS1-nG-MOU"/>
@@ -914,7 +914,7 @@
                     </state>
                 </button>
             </objects>
-            <point key="canvasLocation" x="3336.8000000000002" y="-701.23152709359613"/>
+            <point key="canvasLocation" x="3338" y="-711"/>
         </scene>
         <!--Articles-->
         <scene sceneID="eGp-uz-4vh">
@@ -1018,8 +1018,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="About">
-                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedAbout:" destination="FiD-99-QTM" eventType="touchUpInside" id="rSZ-Xv-zpf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account created at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-t9-kHh">
                                 <rect key="frame" x="16" y="539" width="176" height="24"/>
@@ -1062,7 +1065,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYB-Fr-ADL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="715.27093596059115"/>
+            <point key="canvasLocation" x="2502" y="715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cn7-ne-F1w">
+            <objects>
+                <viewController storyboardIdentifier="AboutSheet" id="sq8-l3-jNu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6R6-S7-2UQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WhiskeyPlease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1f-jS-85a">
+                                <rect key="frame" x="87.333333333333329" y="87" width="200.33333333333337" height="35"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                <color key="textColor" name="detailViewBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This aplication is created by Jakub Prus in early 2023 for portfolio and personal purposes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyi-fb-h29">
+                                <rect key="frame" x="16" y="142" width="343" height="69.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" name="detailViewBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article sources: wikipedia.org and Google images" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMU-U4-NPz">
+                                <rect key="frame" x="16" y="219.66666666666666" width="343" height="46.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" name="detailViewBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more info contact me at: github.com/JakubPrusGitHub" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuC-K8-4ox">
+                                <rect key="frame" x="16" y="274" width="343" height="46.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" name="detailViewBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kX3-fF-u4X"/>
+                        <color key="backgroundColor" name="ingredientsBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dMU-U4-NPz" firstAttribute="top" secondItem="cyi-fb-h29" secondAttribute="bottom" constant="8" symbolic="YES" id="2CQ-nL-4kY"/>
+                            <constraint firstItem="j1f-jS-85a" firstAttribute="centerX" secondItem="kX3-fF-u4X" secondAttribute="centerX" id="CFD-g1-5Pv"/>
+                            <constraint firstItem="TuC-K8-4ox" firstAttribute="top" secondItem="dMU-U4-NPz" secondAttribute="bottom" constant="8" symbolic="YES" id="D3d-jE-EzZ"/>
+                            <constraint firstItem="cyi-fb-h29" firstAttribute="top" secondItem="j1f-jS-85a" secondAttribute="bottom" constant="20" id="EZa-LI-SZ9"/>
+                            <constraint firstItem="TuC-K8-4ox" firstAttribute="leading" secondItem="kX3-fF-u4X" secondAttribute="leading" constant="16" id="KLF-o1-bX9"/>
+                            <constraint firstItem="kX3-fF-u4X" firstAttribute="trailing" secondItem="cyi-fb-h29" secondAttribute="trailing" constant="16" id="Ob8-Le-rca"/>
+                            <constraint firstItem="j1f-jS-85a" firstAttribute="top" secondItem="kX3-fF-u4X" secondAttribute="top" constant="40" id="Ue5-Sc-lO1"/>
+                            <constraint firstItem="kX3-fF-u4X" firstAttribute="trailing" secondItem="TuC-K8-4ox" secondAttribute="trailing" constant="16" id="e7a-Tx-5Es"/>
+                            <constraint firstItem="dMU-U4-NPz" firstAttribute="leading" secondItem="kX3-fF-u4X" secondAttribute="leading" constant="16" id="fc0-s0-oYF"/>
+                            <constraint firstItem="cyi-fb-h29" firstAttribute="leading" secondItem="kX3-fF-u4X" secondAttribute="leading" constant="16" id="pdE-fS-wVt"/>
+                            <constraint firstItem="kX3-fF-u4X" firstAttribute="trailing" secondItem="dMU-U4-NPz" secondAttribute="trailing" constant="16" id="xvm-Hc-VkZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTo-rZ-4Ta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="1410.5911330049262"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kZ9-Zy-CZU">
@@ -1111,7 +1168,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4d5-VE-iAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5999999999999" y="-701.23152709359613"/>
+            <point key="canvasLocation" x="1559" y="-711"/>
         </scene>
         <!--Profile-->
         <scene sceneID="sAT-Ie-seR">
@@ -1138,7 +1195,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eG7-et-zrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5999999999999" y="715.27093596059115"/>
+            <point key="canvasLocation" x="1559" y="715"/>
         </scene>
     </scenes>
     <resources>
@@ -1159,6 +1216,9 @@
         <namedColor name="detailViewTitleColor">
             <color red="0.82745098039215681" green="0.70980392156862748" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="ingredientsBackgroundColor">
+            <color red="0.69019607843137254" green="0.50980392156862742" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="textColor">
             <color red="0.62745098039215685" green="0.52941176470588236" blue="0.4823529411764706" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -1174,11 +1234,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

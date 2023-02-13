@@ -29,4 +29,15 @@ class ProfileView: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
+    @IBAction func clickedAbout(_ sender: Any) {
+        let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutSheet")
+        if let sheet = reviewSheet.sheetPresentationController {
+            sheet.detents = [.custom { content in
+                return content.maximumDetentValue * 0.4
+            }]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 20
+        }
+        present(reviewSheet, animated: true)
+    }
 }
