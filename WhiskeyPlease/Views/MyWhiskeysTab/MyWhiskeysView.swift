@@ -31,22 +31,27 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         ]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        
-        //collectionView.layer.insertSublayer(gradientLayer, at: 0)
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let id = indexPath.row
+        let current = allUserReviewedWhiskey.allReviewedWhiskeys[id]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewedWhiskeyCell", for: indexPath) as! ReviewedWhiskeyCollectionViewCell
         cell.layer.cornerRadius = 20
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowRadius = 5
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = .zero
-        cell.whiskeyNameCell.text = allUserReviewedWhiskey.allReviewedWhiskeys[indexPath.row].whiskeyName
-        cell.whiskeyOverallRating.text = String(allUserReviewedWhiskey.allReviewedWhiskeys[indexPath.row].overall)
+        cell.whiskeyNameCell.text = current.whiskeyName
+        cell.whiskeyOverallRating.text = String(current.overall)
+        cell.tasteText.text = "Taste: \(current.taste)"
+        cell.noseText.text = "Nose: \(current.nose)"
+        cell.finishText.text = "Finish: \(current.finish)"
+        cell.presenceText.text = "Presence: \(current.presence)"
+        cell.impressionText.text = "Impression: \(current.impression)"
         return cell
     }
     
@@ -70,4 +75,5 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         allUserReviewedWhiskey.allReviewedWhiskeys.append(newReview)
         collectionView.reloadData()
     }
+    
 }

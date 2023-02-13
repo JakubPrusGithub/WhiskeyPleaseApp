@@ -11,7 +11,7 @@ protocol UpdateViewWithNewReview{
     func updateViewWithNewReview(newReview: ReviewedWhiskey)
 }
 
-class AddingReviewViewController: UIViewController {
+class AddingReviewViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var whiskeyName: UITextField!
     @IBOutlet weak var tasteRating: RatingController!
@@ -27,6 +27,16 @@ class AddingReviewViewController: UIViewController {
         view.layer.backgroundColor = UIColor(named: "ingredientsBackgroundColor")?.cgColor
         whiskeyName.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        whiskeyName.delegate = self
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
     
     @IBAction func doneButton(_ sender: Any) {

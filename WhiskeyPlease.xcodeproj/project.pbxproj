@@ -100,6 +100,7 @@
 		D35626E82978925E00926239 /* WhiskeyPlease */ = {
 			isa = PBXGroup;
 			children = (
+				D3B6817B299AF1D80036434C /* Model */,
 				D35A6A322989BA5000E4CAD2 /* ArticleIcons */,
 				D35A6A2F2989935800E4CAD2 /* JSON */,
 				D35A6A2E2989933B00E4CAD2 /* Views */,
@@ -115,16 +116,11 @@
 		D35A6A2E2989933B00E4CAD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D35626ED2978925E00926239 /* ViewController.swift */,
-				D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */,
-				D35A6A63298C7A2C00E4CAD2 /* ProfileView.swift */,
-				D3562701297DF3C100926239 /* ArticleTableViewCell.swift */,
-				D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */,
 				D35626EF2978925E00926239 /* Main.storyboard */,
-				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
 				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
-				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
-				D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */,
+				D3B6817A299AF1730036434C /* ArticlesTab */,
+				D3B6817D299AF2810036434C /* MyWhiskeysTab */,
+				D3B6817C299AF2670036434C /* ProfileTab */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +152,42 @@
 			);
 			name = ArticleIcons;
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		D3B6817A299AF1730036434C /* ArticlesTab */ = {
+			isa = PBXGroup;
+			children = (
+				D35626ED2978925E00926239 /* ViewController.swift */,
+				D3562701297DF3C100926239 /* ArticleTableViewCell.swift */,
+				D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */,
+			);
+			path = ArticlesTab;
+			sourceTree = "<group>";
+		};
+		D3B6817B299AF1D80036434C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3B6817C299AF2670036434C /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				D35A6A63298C7A2C00E4CAD2 /* ProfileView.swift */,
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
+		D3B6817D299AF2810036434C /* MyWhiskeysTab */ = {
+			isa = PBXGroup;
+			children = (
+				D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */,
+				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
+				D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */,
+			);
+			path = MyWhiskeysTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
