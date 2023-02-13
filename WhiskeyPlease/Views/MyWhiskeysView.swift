@@ -36,15 +36,13 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
-        print(allUserReviewedWhiskey.allReviewedWhiskeys.count)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewedWhiskeyCell", for: indexPath) as! ReviewedWhiskeyCollectionViewCell
-        cell.layer.backgroundColor = UIColor(named: "ingredientsBackgroundColor")?.cgColor
         cell.layer.cornerRadius = 20
         cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 10
+        cell.layer.shadowRadius = 5
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = .zero
         cell.whiskeyNameCell.text = allUserReviewedWhiskey.allReviewedWhiskeys[indexPath.row].whiskeyName

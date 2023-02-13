@@ -15,9 +15,10 @@ class AllReviewedWhiskeys {
         // soon there will be code to load user data from CoreData
         
         self.allReviewedWhiskeys = [ReviewedWhiskey]()
-        self.allReviewedWhiskeys.append(ReviewedWhiskey.example)
-        self.allReviewedWhiskeys.append(ReviewedWhiskey.example)
-        self.allReviewedWhiskeys.append(ReviewedWhiskey.example)
+        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Jack Daniel's", taste: 8, nose: 9, finish: 4, presence: 7, impression: 9))
+        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "The Famous Grouse", taste: 4, nose: 3, finish: 7, presence: 7, impression: 6))
+        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Johnnie Walker Black Label", taste: 10, nose: 7, finish: 8, presence: 9, impression: 9))
+        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Ballantine's", taste: 7, nose: 7, finish: 5, presence: 6, impression: 7))
     }
 }
 
