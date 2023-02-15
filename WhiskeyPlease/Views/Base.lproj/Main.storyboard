@@ -967,14 +967,14 @@
                             <constraint firstItem="0uP-YG-11X" firstAttribute="top" secondItem="Zqy-n3-inF" secondAttribute="bottom" constant="29.666666666666629" id="EC2-nA-m9D"/>
                             <constraint firstItem="9Gs-VW-aC3" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="F67-jC-Y8a"/>
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="9Gs-VW-aC3" secondAttribute="trailing" constant="20" id="GxU-Ln-kaB"/>
+                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="dOc-4L-3Oq" secondAttribute="trailing" constant="20" id="HEC-26-lIF"/>
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="Eca-IX-uQR" secondAttribute="trailing" constant="20" id="IaA-St-wFD"/>
                             <constraint firstItem="Zqy-n3-inF" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="LQd-bo-elw"/>
-                            <constraint firstItem="dOc-4L-3Oq" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="Ljv-8k-vfN"/>
-                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="dOc-4L-3Oq" secondAttribute="trailing" constant="20" id="Mkl-3D-cF3"/>
                             <constraint firstItem="dOc-4L-3Oq" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="NBJ-C5-5N3"/>
                             <constraint firstItem="I3H-Mg-rWW" firstAttribute="top" secondItem="Eca-IX-uQR" secondAttribute="bottom" constant="29.666666666666686" id="Or2-uk-jVK"/>
                             <constraint firstItem="JWL-Sa-1Bv" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="TQP-Us-BWz"/>
                             <constraint firstItem="Xew-2x-gOX" firstAttribute="top" secondItem="f9Z-Cr-R66" secondAttribute="top" constant="40" id="TUc-lR-t99"/>
+                            <constraint firstItem="dOc-4L-3Oq" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="V4r-A3-7yo"/>
                             <constraint firstItem="Ms1-mR-QJn" firstAttribute="top" secondItem="LHM-eN-n3w" secondAttribute="bottom" constant="8" symbolic="YES" id="X1P-fw-m8f"/>
                             <constraint firstItem="Zqy-n3-inF" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="ZQ4-Xf-mym"/>
                             <constraint firstItem="Ms1-mR-QJn" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="ZyW-wO-kaH"/>
@@ -1110,6 +1110,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Delete reviews">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedDelete:" destination="FiD-99-QTM" eventType="touchUpInside" id="qkv-gV-5YF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-Eg-Zsx">
                                 <rect key="frame" x="145" y="362" width="85" height="29"/>

@@ -8,8 +8,8 @@
 import UIKit
 
 class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
-    
-    var allUserReviewedWhiskey = AllReviewedWhiskeys()
+
+    var reviews = AllReviewedWhiskeys.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +34,13 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
+        print(String(describing: reviews.allReviewedWhiskeys))
+        collectionView.reloadData()
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let id = indexPath.row
-        let current = allUserReviewedWhiskey.allReviewedWhiskeys[id]
+        let current = reviews.allReviewedWhiskeys[id]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewedWhiskeyCell", for: indexPath) as! ReviewedWhiskeyCollectionViewCell
         cell.layer.cornerRadius = 20
         cell.layer.shadowColor = UIColor.black.cgColor
@@ -56,7 +58,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return allUserReviewedWhiskey.allReviewedWhiskeys.count
+        return reviews.allReviewedWhiskeys.count
     }
     
     @objc func addWhiskey(){
@@ -72,8 +74,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
     }
     
     func updateViewWithNewReview(newReview: ReviewedWhiskey) {
-        allUserReviewedWhiskey.allReviewedWhiskeys.append(newReview)
+        reviews.allReviewedWhiskeys.append(newReview)
         collectionView.reloadData()
     }
-    
 }

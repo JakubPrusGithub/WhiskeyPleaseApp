@@ -8,6 +8,8 @@
 import UIKit
 
 class ProfileView: UIViewController {
+    
+    var reviews = AllReviewedWhiskeys.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,5 +41,14 @@ class ProfileView: UIViewController {
             sheet.preferredCornerRadius = 20
         }
         present(reviewSheet, animated: true)
+    }
+    
+    @IBAction func clickedDelete(_ sender: Any) {
+        let alert = UIAlertController(title: "Delete reviews?", message: "Are you sure you want to permanently delete all your reviews?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: {[weak self] conetext in
+            self?.reviews.allReviewedWhiskeys = []
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

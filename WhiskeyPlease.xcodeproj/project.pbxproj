@@ -183,8 +183,8 @@
 		D3B6817D299AF2810036434C /* MyWhiskeysTab */ = {
 			isa = PBXGroup;
 			children = (
-				D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */,
 				D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */,
+				D35A6A6729916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift */,
 				D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */,
 			);
 			path = MyWhiskeysTab;

@@ -8,9 +8,12 @@
 import Foundation
 
 class AllReviewedWhiskeys {
+    
+    static let shared = AllReviewedWhiskeys()
+    
     var allReviewedWhiskeys: [ReviewedWhiskey]
     
-    init() {
+    private init() {
         
         // soon there will be code to load user data from CoreData
         
