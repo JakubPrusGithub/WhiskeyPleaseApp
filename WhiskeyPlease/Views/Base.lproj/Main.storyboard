@@ -1078,25 +1078,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of reviewed whiskeys: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-d2-IZW">
-                                <rect key="frame" x="16" y="411" width="283.33333333333331" height="24"/>
+                                <rect key="frame" x="16" y="411" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-44-ZQs">
-                                <rect key="frame" x="16" y="443" width="145" height="24"/>
+                                <rect key="frame" x="16" y="443" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summed up rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-bz-gfa">
-                                <rect key="frame" x="16" y="475" width="177.66666666666666" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All ratings summed up:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-bz-gfa">
+                                <rect key="frame" x="16" y="475" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest added review: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-rh-01U">
-                                <rect key="frame" x="16" y="507" width="193" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest review: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-rh-01U">
+                                <rect key="frame" x="16" y="507" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1134,7 +1134,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account created at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-t9-kHh">
-                                <rect key="frame" x="16" y="539" width="176" height="24"/>
+                                <rect key="frame" x="16" y="539" width="343" height="24"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1143,17 +1143,17 @@
                         <viewLayoutGuide key="safeArea" id="b1P-pz-xUJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="ndf-d2-IZW" secondAttribute="trailing" constant="75.670000000000002" id="3pn-oF-U7m"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="xIM-bz-gfa" secondAttribute="trailing" constant="181.33000000000001" id="6NO-Rp-W1E"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="ndf-d2-IZW" secondAttribute="trailing" constant="16" id="3pn-oF-U7m"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="xIM-bz-gfa" secondAttribute="trailing" constant="16" id="549-o1-FEu"/>
                             <constraint firstItem="TE6-SS-j2V" firstAttribute="top" secondItem="tZQ-LY-Eeu" secondAttribute="bottom" constant="20" id="8kS-Yz-FaC"/>
                             <constraint firstItem="xIM-bz-gfa" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="9vV-0h-qs1"/>
                             <constraint firstItem="t6s-Eg-Zsx" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="AYa-uZ-ZRZ"/>
                             <constraint firstItem="YY3-44-ZQs" firstAttribute="top" secondItem="ndf-d2-IZW" secondAttribute="bottom" constant="8" symbolic="YES" id="CsV-vc-oNX"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="YY3-44-ZQs" secondAttribute="trailing" constant="214" id="D56-N8-4mz"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="YY3-44-ZQs" secondAttribute="trailing" constant="16" id="D56-N8-4mz"/>
                             <constraint firstItem="TE6-SS-j2V" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="FU2-n9-WBL"/>
                             <constraint firstItem="btA-gk-EBe" firstAttribute="top" secondItem="Qqv-Ty-BYq" secondAttribute="bottom" id="Fn2-UJ-9AW"/>
                             <constraint firstItem="ndf-d2-IZW" firstAttribute="top" secondItem="t6s-Eg-Zsx" secondAttribute="bottom" constant="20" id="INI-nV-XRp"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="PVJ-rh-01U" secondAttribute="trailing" constant="166" id="ISC-xB-gF6"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="PVJ-rh-01U" secondAttribute="trailing" constant="16" id="ISC-xB-gF6"/>
                             <constraint firstItem="PVJ-rh-01U" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="Qvj-Uz-ejX"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="bottom" secondItem="TE6-SS-j2V" secondAttribute="bottom" constant="20" id="T3F-ha-UoX"/>
                             <constraint firstItem="tZQ-LY-Eeu" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="UZc-jW-K8p"/>
@@ -1162,7 +1162,7 @@
                             <constraint firstItem="xIM-bz-gfa" firstAttribute="top" secondItem="YY3-44-ZQs" secondAttribute="bottom" constant="8" symbolic="YES" id="XkZ-d9-DV7"/>
                             <constraint firstItem="N8E-t9-kHh" firstAttribute="top" secondItem="PVJ-rh-01U" secondAttribute="bottom" constant="8" symbolic="YES" id="ZQq-7b-MNG"/>
                             <constraint firstItem="Qqv-Ty-BYq" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="ZxI-Xu-sXR"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="183" id="gfF-2J-BUc"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="16" id="gfF-2J-BUc"/>
                             <constraint firstItem="PVJ-rh-01U" firstAttribute="top" secondItem="xIM-bz-gfa" secondAttribute="bottom" constant="8" symbolic="YES" id="iGQ-ah-Sqt"/>
                             <constraint firstItem="btA-gk-EBe" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="k7t-nH-ghf"/>
                             <constraint firstItem="t6s-Eg-Zsx" firstAttribute="top" secondItem="btA-gk-EBe" secondAttribute="bottom" constant="40" id="pJL-TA-oIl"/>
@@ -1171,10 +1171,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RLP-g8-Ruo"/>
+                    <connections>
+                        <outlet property="accountCreated" destination="N8E-t9-kHh" id="3eL-HL-2dP"/>
+                        <outlet property="averageRating" destination="YY3-44-ZQs" id="NFm-xH-MW8"/>
+                        <outlet property="latestReview" destination="PVJ-rh-01U" id="yNc-7L-V4i"/>
+                        <outlet property="reviewesCount" destination="ndf-d2-IZW" id="ZcH-7O-beS"/>
+                        <outlet property="summedUp" destination="xIM-bz-gfa" id="9Gj-bl-Ppt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYB-Fr-ADL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2502" y="715"/>
+            <point key="canvasLocation" x="2501.5999999999999" y="714.53201970443354"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cn7-ne-F1w">

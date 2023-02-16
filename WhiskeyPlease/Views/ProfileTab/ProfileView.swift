@@ -10,7 +10,13 @@ import UIKit
 class ProfileView: UIViewController {
     
     var reviews = AllReviewedWhiskeys.shared
-
+    
+    @IBOutlet weak var reviewesCount: UILabel!
+    @IBOutlet weak var averageRating: UILabel!
+    @IBOutlet weak var summedUp: UILabel!
+    @IBOutlet weak var latestReview: UILabel!
+    @IBOutlet weak var accountCreated: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +35,37 @@ class ProfileView: UIViewController {
         
         title="Profile"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yy"
+        accountCreated.text = "Account created at: \(Date.now.formatted(date: .long, time: .omitted))"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshStats()
+    }
+    
+    func refreshStats(){
+        if reviews.allReviewedWhiskeys.count != 0 {
+            var sum = 0
+            for review in reviews.allReviewedWhiskeys {
+                sum += review.overall
+            }
+            let average = sum / reviews.allReviewedWhiskeys.count
+            let lastReview = reviews.allReviewedWhiskeys[reviews.allReviewedWhiskeys.count - 1].whiskeyName
+            
+            reviewesCount.text = "Number of reviewed whiskeys: \(reviews.allReviewedWhiskeys.count)"
+            averageRating.text = "Average rating: \(average)"
+            summedUp.text = "All ratings summed up: \(sum)"
+            latestReview.text = "Latest review: \(lastReview)"
+        }
+        else{
+            reviewesCount.text = "Number of reviewed whiskeys: 0"
+            averageRating.text = "Average rating: 0"
+            summedUp.text = "All ratings summed up: 0"
+            latestReview.text = "Latest review: None"
+        }
     }
 
     @IBAction func clickedAbout(_ sender: Any) {
@@ -46,7 +83,8 @@ class ProfileView: UIViewController {
     @IBAction func clickedDelete(_ sender: Any) {
         let alert = UIAlertController(title: "Delete reviews?", message: "Are you sure you want to permanently delete all your reviews?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: {[weak self] conetext in
-            self?.reviews.allReviewedWhiskeys = []
+            self?.reviews.deleteReviews()
+            self?.refreshStats()
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)

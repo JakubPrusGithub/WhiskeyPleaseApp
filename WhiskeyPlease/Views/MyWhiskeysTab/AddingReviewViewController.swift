@@ -39,6 +39,7 @@ class AddingReviewViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
     }
     
+    
     @IBAction func doneButton(_ sender: Any) {
         guard let reviewedWhiskeyName = whiskeyName.text else {return}
         let taste = tasteRating.starsRating

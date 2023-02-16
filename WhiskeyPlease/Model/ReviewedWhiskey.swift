@@ -23,6 +23,14 @@ class AllReviewedWhiskeys {
         self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Johnnie Walker Black Label", taste: 10, nose: 7, finish: 8, presence: 9, impression: 9))
         self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Ballantine's", taste: 7, nose: 7, finish: 5, presence: 6, impression: 7))
     }
+    
+    func addReview(_ reviewed: ReviewedWhiskey){
+        self.allReviewedWhiskeys.append(reviewed)
+    }
+    
+    func deleteReviews(){
+        self.allReviewedWhiskeys = []
+    }
 }
 
 

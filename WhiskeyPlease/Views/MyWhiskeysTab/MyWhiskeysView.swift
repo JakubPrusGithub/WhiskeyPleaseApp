@@ -34,7 +34,6 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         let collectionViewBackgroundView = UIView()
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
-        print(String(describing: reviews.allReviewedWhiskeys))
         collectionView.reloadData()
     }
     
@@ -74,7 +73,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
     }
     
     func updateViewWithNewReview(newReview: ReviewedWhiskey) {
-        reviews.allReviewedWhiskeys.append(newReview)
+        reviews.addReview(newReview)
         collectionView.reloadData()
     }
 }
