@@ -113,6 +113,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
             navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "titleColor")
             navigationItem.rightBarButtonItem?.isEnabled = false
             
+            guard reviews.allReviewedWhiskeys.count > 0 else {return}
             let count = reviews.allReviewedWhiskeys.count-1
             for cellID in 0...count {
                 let currCell = collectionView.cellForItem(at: IndexPath(item: cellID, section: 0)) as? ReviewedWhiskeyCollectionViewCell
@@ -124,6 +125,7 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
             navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "titleColor")
             navigationItem.rightBarButtonItem?.isEnabled = true
             
+            guard reviews.allReviewedWhiskeys.count > 0 else {return}
             let count = reviews.allReviewedWhiskeys.count-1
             for cellID in 0...count {
                 let currCell = collectionView.cellForItem(at: IndexPath(item: cellID, section: 0)) as? ReviewedWhiskeyCollectionViewCell

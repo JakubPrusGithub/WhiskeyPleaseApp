@@ -53,7 +53,7 @@ class ProfileView: UIViewController {
                 sum += review.overall
             }
             let average = sum / reviews.allReviewedWhiskeys.count
-            let lastReview = reviews.allReviewedWhiskeys[reviews.allReviewedWhiskeys.count - 1].whiskeyName
+            let lastReview = reviews.allReviewedWhiskeys[0].whiskeyName
             
             reviewesCount.text = "Number of reviewed whiskeys: \(reviews.allReviewedWhiskeys.count)"
             averageRating.text = "Average rating: \(average)"

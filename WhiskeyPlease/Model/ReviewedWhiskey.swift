@@ -25,7 +25,7 @@ class AllReviewedWhiskeys {
     }
     
     func addReview(_ review: ReviewedWhiskey){
-        self.allReviewedWhiskeys.append(review)
+        self.allReviewedWhiskeys.insert(review, at: 0)
     }
     
     func replaceReview(old: ReviewedWhiskey, new: ReviewedWhiskey){
