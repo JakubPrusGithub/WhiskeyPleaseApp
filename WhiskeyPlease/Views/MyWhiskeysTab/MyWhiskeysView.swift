@@ -8,16 +8,21 @@
 import UIKit
 
 class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
-
+    
+    //UIContextMenuInteractionDelegate
+    
     var reviews = AllReviewedWhiskeys.shared
+    var editMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title="My Whiskeys"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhiskey))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhiskeyButton))
         navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "titleColor")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(toggleEdit))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "titleColor")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +40,11 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
         collectionView.reloadData()
+        
+        editMode = false
+        isWiggling()
     }
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let id = indexPath.row
@@ -60,7 +69,28 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         return reviews.allReviewedWhiskeys.count
     }
     
-    @objc func addWhiskey(){
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let id = indexPath.row
+        let currReview = reviews.allReviewedWhiskeys[id]
+        editWhiskey(review: currReview)
+    }
+    //name: String = "", tase: Int = 0, nose: Int = 0, finish: Int = 0, presence: Int = 0, impression: Int = 0
+    func editWhiskey(review: ReviewedWhiskey = ReviewedWhiskey(whiskeyName: "", taste: 0, nose: 0, finish: 0, presence: 0, impression: 0)){
+        let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
+        if let sheet = reviewSheet.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 20
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+        }
+        reviewSheet.delegate = self
+        reviewSheet.editedReview = review
+        reviewSheet.isEditingReview = true
+        
+        present(reviewSheet, animated: true)
+    }
+    
+    @objc func addWhiskeyButton(){
         let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
         if let sheet = reviewSheet.sheetPresentationController {
             sheet.detents = [.large()]
@@ -72,8 +102,61 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         present(reviewSheet, animated: true)
     }
     
+    @objc func toggleEdit(){
+        editMode.toggle()
+        isWiggling()
+    }
+    
+    func isWiggling(){
+        if editMode {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(toggleEdit))
+            navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "titleColor")
+            navigationItem.rightBarButtonItem?.isEnabled = false
+            
+            let count = reviews.allReviewedWhiskeys.count-1
+            for cellID in 0...count {
+                let currCell = collectionView.cellForItem(at: IndexPath(item: cellID, section: 0)) as? ReviewedWhiskeyCollectionViewCell
+                currCell?.wiggle(duration: Double.random(in: 0.1 ... 0.2))
+            }
+        }
+        else {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(toggleEdit))
+            navigationItem.leftBarButtonItem?.tintColor = UIColor(named: "titleColor")
+            navigationItem.rightBarButtonItem?.isEnabled = true
+            
+            let count = reviews.allReviewedWhiskeys.count-1
+            for cellID in 0...count {
+                let currCell = collectionView.cellForItem(at: IndexPath(item: cellID, section: 0)) as? ReviewedWhiskeyCollectionViewCell
+                currCell?.stopWiggle()
+            }
+        }
+    }
+    
     func updateViewWithNewReview(newReview: ReviewedWhiskey) {
         reviews.addReview(newReview)
+        editMode = false
+        isWiggling()
         collectionView.reloadData()
     }
+    
+    func updateViewWithEditedReview(newReview: ReviewedWhiskey, oldReview: ReviewedWhiskey) {
+        reviews.replaceReview(old: oldReview, new: newReview)
+        editMode = false
+        isWiggling()
+        collectionView.reloadData()
+    }
+    
+//    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
+//        var menuItems: [UIAction] {
+//            return [
+//                UIAction(title: "Edit", image: UIImage(systemName: "pencil"), handler: { (_) in
+//                }),
+//                UIAction(title: "Delete", image: UIImage(systemName: "trash"), attributes: .destructive, handler: { (_) in
+//                })
+//            ]
+//        }
+//        return UIContextMenuConfiguration(actionProvider: { _ in
+//            UIMenu(title: "", children: menuItems)
+//        })
+//    }
 }

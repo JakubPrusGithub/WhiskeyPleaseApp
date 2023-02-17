@@ -17,12 +17,20 @@ class RatingController: UIStackView {
     override func draw(_ rect: CGRect) {
         let myViews = self.subviews.filter{$0 is UIButton}
         var starTag = 1
+        var insideRating = starsRating
         for theView in myViews {
             if let theButton = theView as? UIButton{
-                theButton.setImage(UIImage(systemName: starsEmptyName), for: .normal)
+                if insideRating > 0 {
+                    theButton.setImage(UIImage(systemName: starsFilledName), for: .normal)
+                    insideRating -= 1
+                }
+                else{
+                    theButton.setImage(UIImage(systemName: starsEmptyName), for: .normal)
+                }
+                
                 theButton.addTarget(self, action: #selector(self.pressed(sender:)), for: .touchUpInside)
                 theButton.tag = starTag
-                starTag = starTag + 1
+                starTag += 1
             }
         }
     }

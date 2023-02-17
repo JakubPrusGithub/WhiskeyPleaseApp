@@ -13,6 +13,7 @@ class ReviewedWhiskeyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var thumbnail: UIView!
     @IBOutlet weak var whiskeyNameCell: UILabel!
     @IBOutlet weak var whiskeyOverallRating: UILabel!
+    @IBOutlet weak var thumbnailButton: UIButton!
     
     // Secondary view of cell (flipped)
     @IBOutlet weak var details: UIView!
@@ -21,14 +22,45 @@ class ReviewedWhiskeyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var finishText: UILabel!
     @IBOutlet weak var presenceText: UILabel!
     @IBOutlet weak var impressionText: UILabel!
+    @IBOutlet weak var detailsButton: UIButton!
     
     private var animationDuration: Double = 0.75
+    var wiggling = false
+    
     
     @IBAction func clickedFlipping(_ sender: Any) {
         UIView.transition(from: thumbnail, to: details, duration: animationDuration, options: [.transitionFlipFromLeft, .showHideTransitionViews])
+        guard wiggling != true else {return}
+        
     }
     
     @IBAction func clickedReflipping(_ sender: Any) {
         UIView.transition(from: details, to: thumbnail, duration: animationDuration, options: [.transitionFlipFromRight, .showHideTransitionViews])
+    }
+    
+    func wiggle(duration: Double) {
+//        let wiggleAnim = CABasicAnimation(keyPath: "position")
+//        wiggleAnim.duration = 0.05
+//        wiggleAnim.repeatCount = 5
+//        wiggleAnim.autoreverses = true
+//        wiggleAnim.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
+//        wiggleAnim.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
+//        layer.add(wiggleAnim, forKey: "position")
+        wiggling = true
+        thumbnailButton.isHidden = true
+        detailsButton.isHidden = true
+        let transformAnim  = CAKeyframeAnimation(keyPath:"transform")
+        transformAnim.values  = [NSValue(caTransform3D: CATransform3DMakeRotation(0.04, 0.0, 0.0, 1.0)),NSValue(caTransform3D: CATransform3DMakeRotation(-0.04 , 0, 0, 1))]
+        transformAnim.autoreverses = true
+        transformAnim.duration  = duration
+        transformAnim.repeatCount = .infinity
+        self.layer.add(transformAnim, forKey: "transform")
+    }
+    
+    func stopWiggle() {
+        wiggling = false
+        thumbnailButton.isHidden = false
+        detailsButton.isHidden = false
+        self.layer.removeAllAnimations()
     }
 }

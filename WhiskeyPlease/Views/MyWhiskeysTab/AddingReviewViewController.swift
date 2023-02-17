@@ -9,6 +9,7 @@ import UIKit
 
 protocol UpdateViewWithNewReview{
     func updateViewWithNewReview(newReview: ReviewedWhiskey)
+    func updateViewWithEditedReview(newReview: ReviewedWhiskey, oldReview: ReviewedWhiskey)
 }
 
 class AddingReviewViewController: UIViewController, UITextFieldDelegate {
@@ -20,6 +21,16 @@ class AddingReviewViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var presenceRating: RatingController!
     @IBOutlet weak var impressionRating: RatingController!
     
+//    var name = ""
+//    var tasteStars = 0
+//    var noseStars = 0
+//    var finishStars = 0
+//    var presenceStars = 0
+//    var impressionStars = 0
+    
+    var editedReview = ReviewedWhiskey(whiskeyName: "", taste: 0, nose: 0, finish: 0, presence: 0, impression: 0)
+    var isEditingReview = false
+    
     var delegate: UpdateViewWithNewReview?
     
     override func viewDidLoad() {
@@ -30,6 +41,13 @@ class AddingReviewViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         whiskeyName.delegate = self
+        
+        whiskeyName.text = editedReview.whiskeyName
+        tasteRating.starsRating = editedReview.taste
+        noseRating.starsRating = editedReview.nose
+        finishRating.starsRating = editedReview.finish
+        presenceRating.starsRating = editedReview.presence
+        impressionRating.starsRating = editedReview.impression
     }
     
     @objc func dismissKeyboard() {
@@ -48,7 +66,12 @@ class AddingReviewViewController: UIViewController, UITextFieldDelegate {
         let presence = presenceRating.starsRating
         let impression = impressionRating.starsRating
         let newReview = ReviewedWhiskey(whiskeyName: reviewedWhiskeyName, taste: taste, nose: nose, finish: finish, presence: presence, impression: impression)
-        delegate?.updateViewWithNewReview(newReview: newReview)
+        if isEditingReview == false {
+            delegate?.updateViewWithNewReview(newReview: newReview)
+        }
+        else{
+            delegate?.updateViewWithEditedReview(newReview: newReview, oldReview: editedReview)
+        }
         dismiss(animated: true)
     }
 }

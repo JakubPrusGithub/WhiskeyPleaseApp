@@ -24,8 +24,16 @@ class AllReviewedWhiskeys {
         self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Ballantine's", taste: 7, nose: 7, finish: 5, presence: 6, impression: 7))
     }
     
-    func addReview(_ reviewed: ReviewedWhiskey){
-        self.allReviewedWhiskeys.append(reviewed)
+    func addReview(_ review: ReviewedWhiskey){
+        self.allReviewedWhiskeys.append(review)
+    }
+    
+    func replaceReview(old: ReviewedWhiskey, new: ReviewedWhiskey){
+        for index in 0..<self.allReviewedWhiskeys.count {
+            if self.allReviewedWhiskeys[index].id == old.id {
+                self.allReviewedWhiskeys[index] = new
+            }
+        }
     }
     
     func deleteReviews(){
@@ -37,6 +45,7 @@ class AllReviewedWhiskeys {
 
 struct ReviewedWhiskey: Codable {
     
+    var id = UUID()
     var whiskeyName: String
     
     // 1-10 rating

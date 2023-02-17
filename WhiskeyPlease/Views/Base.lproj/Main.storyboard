@@ -418,12 +418,14 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="details" destination="Xa9-nE-lv5" id="cIy-5A-XSf"/>
+                                    <outlet property="detailsButton" destination="g28-V1-hib" id="5MX-kO-tr0"/>
                                     <outlet property="finishText" destination="pJw-Sd-eBC" id="D7g-FO-BWn"/>
                                     <outlet property="impressionText" destination="wuU-aw-yFe" id="lPf-Vh-WeD"/>
                                     <outlet property="noseText" destination="gZ1-a0-sY4" id="hcN-9x-TGB"/>
                                     <outlet property="presenceText" destination="Oa2-2o-J3c" id="Vc6-zF-EaI"/>
                                     <outlet property="tasteText" destination="Xci-YU-ryI" id="Jm3-Ct-vKJ"/>
                                     <outlet property="thumbnail" destination="1gq-VW-JPy" id="GoQ-FE-sx1"/>
+                                    <outlet property="thumbnailButton" destination="seq-fH-2Uw" id="Gz0-fO-giu"/>
                                     <outlet property="whiskeyNameCell" destination="f4a-9s-NLO" id="btI-YM-NSC"/>
                                     <outlet property="whiskeyOverallRating" destination="t3D-zd-GF8" id="ovF-A3-mCA"/>
                                 </connections>
