@@ -83,7 +83,7 @@ class ProfileView: UIViewController {
     @IBAction func clickedDelete(_ sender: Any) {
         let alert = UIAlertController(title: "Delete reviews?", message: "Are you sure you want to permanently delete all your reviews?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: {[weak self] conetext in
-            self?.reviews.deleteReviews()
+            self?.reviews.deleteAllReviews()
             self?.refreshStats()
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

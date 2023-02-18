@@ -134,18 +134,25 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         }
     }
     
-    func updateViewWithNewReview(newReview: ReviewedWhiskey) {
-        reviews.addReview(newReview)
+    func disableEditing(){
         editMode = false
         isWiggling()
         collectionView.reloadData()
     }
     
+    func updateViewWithNewReview(newReview: ReviewedWhiskey) {
+        reviews.addReview(newReview)
+        disableEditing()
+    }
+    
     func updateViewWithEditedReview(newReview: ReviewedWhiskey, oldReview: ReviewedWhiskey) {
         reviews.replaceReview(old: oldReview, new: newReview)
-        editMode = false
-        isWiggling()
-        collectionView.reloadData()
+        disableEditing()
+    }
+    
+    func updateViewWithDeletedReview(deleteReview: ReviewedWhiskey){
+        reviews.deleteReview(review: deleteReview)
+        disableEditing()
     }
     
 //    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {

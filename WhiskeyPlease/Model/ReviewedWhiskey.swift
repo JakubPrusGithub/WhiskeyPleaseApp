@@ -36,7 +36,13 @@ class AllReviewedWhiskeys {
         }
     }
     
-    func deleteReviews(){
+    func deleteReview(review: ReviewedWhiskey){
+        self.allReviewedWhiskeys.removeAll { rev in
+            return rev.id == review.id
+        }
+    }
+    
+    func deleteAllReviews(){
         self.allReviewedWhiskeys = []
     }
 }

@@ -451,7 +451,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whiskey name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHM-eN-n3w">
-                                <rect key="frame" x="115.33333333333333" y="143" width="144.33333333333337" height="26.666666666666657"/>
+                                <rect key="frame" x="119.00000000000001" y="143" width="144.33333333333337" height="26.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -459,12 +459,12 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-mR-QJn">
-                                <rect key="frame" x="20" y="177.66666666666666" width="335" height="34"/>
+                                <rect key="frame" x="20" y="177.66666666666666" width="342.33333333333331" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-RF-QHz">
-                                <rect key="frame" x="163.33333333333334" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
+                                <rect key="frame" x="167" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -472,7 +472,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWL-Sa-1Bv">
-                                <rect key="frame" x="164.66666666666666" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
+                                <rect key="frame" x="168.33333333333334" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -480,7 +480,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6H-xs-pJ7">
-                                <rect key="frame" x="159.33333333333334" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
+                                <rect key="frame" x="163" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -488,7 +488,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3H-Mg-rWW">
-                                <rect key="frame" x="146.66666666666666" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
+                                <rect key="frame" x="150.33333333333334" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -496,15 +496,15 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-YG-11X">
-                                <rect key="frame" x="137" y="641.66666666666663" width="101" height="24.333333333333371"/>
+                                <rect key="frame" x="140.66666666666666" y="641.66666666666663" width="101" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="detailViewBackground"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your new review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-2x-gOX">
-                                <rect key="frame" x="74.666666666666686" y="87" width="226" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-2x-gOX">
+                                <rect key="frame" x="82.666666666666671" y="87" width="217.33333333333331" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -941,10 +941,10 @@
                                 <color key="tintColor" red="0.54509806630000002" green="0.37254902719999999" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-HZ-z53">
-                                <rect key="frame" x="152.66666666666666" y="714" width="70" height="44"/>
+                                <rect key="frame" x="212.33333333333337" y="718" width="90" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Vkk-cE-nP6"/>
-                                    <constraint firstAttribute="width" constant="70" id="pS1-nG-MOU"/>
+                                    <constraint firstAttribute="width" constant="90" id="2iF-YZ-ZZo"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ikd-Yt-wtx"/>
                                 </constraints>
                                 <color key="tintColor" red="0.41568624970000001" green="0.2823529541" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Done">
@@ -952,6 +952,21 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="doneButton:" destination="Wwh-rO-hkw" eventType="touchUpInside" id="kA8-8N-eiL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81e-22-9V1">
+                                <rect key="frame" x="80" y="718" width="90" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="BUy-EV-pZi"/>
+                                    <constraint firstAttribute="height" constant="44" id="iEO-oV-SQR"/>
+                                </constraints>
+                                <color key="tintColor" red="0.76156092171717171" green="0.2491365020251286" blue="0.19915595835000069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete">
+                                    <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedDelete:" destination="Wwh-rO-hkw" eventType="touchUpInside" id="98o-c2-ayX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -962,6 +977,7 @@
                             <constraint firstItem="Eca-IX-uQR" firstAttribute="top" secondItem="a6H-xs-pJ7" secondAttribute="bottom" constant="7.6666666666666856" id="1b5-tq-cqS"/>
                             <constraint firstItem="Zqy-n3-inF" firstAttribute="top" secondItem="I3H-Mg-rWW" secondAttribute="bottom" constant="7.6666666666666288" id="2hJ-fp-thY"/>
                             <constraint firstItem="Eca-IX-uQR" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="3dC-dG-G8p"/>
+                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="PuP-HZ-z53" secondAttribute="trailing" constant="80" id="6jc-LC-u9g"/>
                             <constraint firstItem="8DT-Ph-9c6" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="6tc-38-f3m"/>
                             <constraint firstItem="dOc-4L-3Oq" firstAttribute="top" secondItem="oIA-RF-QHz" secondAttribute="bottom" constant="7.6666666666666003" id="7Sh-vT-tJX"/>
                             <constraint firstItem="0uP-YG-11X" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="A5Z-iE-yeP"/>
@@ -972,7 +988,9 @@
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="dOc-4L-3Oq" secondAttribute="trailing" constant="20" id="HEC-26-lIF"/>
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="Eca-IX-uQR" secondAttribute="trailing" constant="20" id="IaA-St-wFD"/>
                             <constraint firstItem="Zqy-n3-inF" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="20" id="LQd-bo-elw"/>
+                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="bottom" secondItem="PuP-HZ-z53" secondAttribute="bottom" constant="16" id="Mft-do-UP9"/>
                             <constraint firstItem="dOc-4L-3Oq" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="NBJ-C5-5N3"/>
+                            <constraint firstItem="81e-22-9V1" firstAttribute="leading" secondItem="f9Z-Cr-R66" secondAttribute="leading" constant="80" id="NMJ-SM-vbT"/>
                             <constraint firstItem="I3H-Mg-rWW" firstAttribute="top" secondItem="Eca-IX-uQR" secondAttribute="bottom" constant="29.666666666666686" id="Or2-uk-jVK"/>
                             <constraint firstItem="JWL-Sa-1Bv" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="TQP-Us-BWz"/>
                             <constraint firstItem="Xew-2x-gOX" firstAttribute="top" secondItem="f9Z-Cr-R66" secondAttribute="top" constant="40" id="TUc-lR-t99"/>
@@ -983,6 +1001,7 @@
                             <constraint firstItem="9Gs-VW-aC3" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="bAo-yI-2MR"/>
                             <constraint firstItem="oIA-RF-QHz" firstAttribute="top" secondItem="Ms1-mR-QJn" secondAttribute="bottom" constant="30" id="bmw-bk-15k"/>
                             <constraint firstItem="JWL-Sa-1Bv" firstAttribute="top" secondItem="dOc-4L-3Oq" secondAttribute="bottom" constant="29.666666666666629" id="cF9-MQ-Nku"/>
+                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="bottom" secondItem="81e-22-9V1" secondAttribute="bottom" constant="16" id="dvs-xh-BhJ"/>
                             <constraint firstItem="Xew-2x-gOX" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="ea8-Pg-1FA"/>
                             <constraint firstItem="a6H-xs-pJ7" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="fb0-ge-Yea"/>
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="Ms1-mR-QJn" secondAttribute="trailing" constant="20" id="fwg-td-kXQ"/>
@@ -991,21 +1010,21 @@
                             <constraint firstItem="Eca-IX-uQR" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="ggy-Gd-6MF"/>
                             <constraint firstItem="Ms1-mR-QJn" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="hGi-94-TIa"/>
                             <constraint firstItem="LHM-eN-n3w" firstAttribute="top" secondItem="Xew-2x-gOX" secondAttribute="bottom" constant="20" id="hcN-Nc-x0g"/>
-                            <constraint firstItem="f9Z-Cr-R66" firstAttribute="bottom" secondItem="PuP-HZ-z53" secondAttribute="bottom" constant="20" id="qEj-FK-Knv"/>
                             <constraint firstItem="f9Z-Cr-R66" firstAttribute="trailing" secondItem="8DT-Ph-9c6" secondAttribute="trailing" constant="20" id="qq0-PB-24B"/>
                             <constraint firstItem="8DT-Ph-9c6" firstAttribute="top" secondItem="0uP-YG-11X" secondAttribute="bottom" constant="7.6666666666666288" id="qxL-Wb-6co"/>
                             <constraint firstItem="LHM-eN-n3w" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="rKH-Th-2bO"/>
-                            <constraint firstItem="PuP-HZ-z53" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="s3F-Wc-SYX"/>
                             <constraint firstItem="I3H-Mg-rWW" firstAttribute="centerX" secondItem="t6s-eF-Pqo" secondAttribute="centerX" id="sFj-ug-uVb"/>
                             <constraint firstItem="9Gs-VW-aC3" firstAttribute="top" secondItem="JWL-Sa-1Bv" secondAttribute="bottom" constant="7.6666666666666856" id="tbs-Hi-QF1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="81e-22-9V1" id="PEo-KF-5dx"/>
                         <outlet property="finishRating" destination="Eca-IX-uQR" id="SbS-tb-wOq"/>
                         <outlet property="impressionRating" destination="8DT-Ph-9c6" id="l85-dQ-2bI"/>
                         <outlet property="noseRating" destination="9Gs-VW-aC3" id="Vcb-uI-C6l"/>
                         <outlet property="presenceRating" destination="Zqy-n3-inF" id="en4-O1-jAM"/>
                         <outlet property="tasteRating" destination="dOc-4L-3Oq" id="RtC-t5-PNh"/>
+                        <outlet property="titleText" destination="Xew-2x-gOX" id="vTV-9D-96v"/>
                         <outlet property="whiskeyName" destination="Ms1-mR-QJn" id="qI2-mg-F07"/>
                     </connections>
                 </viewController>
@@ -1022,7 +1041,7 @@
                     </state>
                 </button>
             </objects>
-            <point key="canvasLocation" x="3338" y="-711"/>
+            <point key="canvasLocation" x="3336.8000000000002" y="-711.57635467980299"/>
         </scene>
         <!--Articles-->
         <scene sceneID="eGp-uz-4vh">
