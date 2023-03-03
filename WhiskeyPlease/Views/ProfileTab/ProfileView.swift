@@ -16,6 +16,7 @@ class ProfileView: UIViewController {
     @IBOutlet weak var summedUp: UILabel!
     @IBOutlet weak var latestReview: UILabel!
     @IBOutlet weak var accountCreated: UILabel!
+    @IBOutlet weak var username: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,9 @@ class ProfileView: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let dateFormatter = DateFormatter()
+        let today = String(Date.now.formatted(date: .long, time: .omitted))
         dateFormatter.dateFormat = "dd.MM.yy"
-        accountCreated.text = "Account created at: \(Date.now.formatted(date: .long, time: .omitted))"
+        accountCreated.text = "Account created at: \(today)" // doesnt save
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +72,18 @@ class ProfileView: UIViewController {
             latestReview.text = "Highest rated: None"
         }
     }
+    
+    @IBAction func clickedUsernameEdit(_ sender: Any) {
+        let alert = UIAlertController(title: "Enter your username", message: "", preferredStyle: .alert)
+        alert.addTextField()
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {[weak self] conetext in
+            let usernameTextField = alert.textFields![0]
+            self?.username.text = usernameTextField.text // doesnt save
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 
     @IBAction func clickedAbout(_ sender: Any) {
         let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutSheet")

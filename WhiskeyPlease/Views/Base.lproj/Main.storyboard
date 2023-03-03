@@ -451,7 +451,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whiskey name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHM-eN-n3w">
-                                <rect key="frame" x="119.00000000000001" y="143" width="144.33333333333337" height="26.666666666666657"/>
+                                <rect key="frame" x="115.33333333333333" y="143" width="144.33333333333337" height="26.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -459,12 +459,12 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-mR-QJn">
-                                <rect key="frame" x="20" y="177.66666666666666" width="342.33333333333331" height="34"/>
+                                <rect key="frame" x="20" y="177.66666666666666" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-RF-QHz">
-                                <rect key="frame" x="167" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
+                                <rect key="frame" x="163.33333333333334" y="241.66666666666666" width="48.666666666666657" height="24.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -472,7 +472,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWL-Sa-1Bv">
-                                <rect key="frame" x="168.33333333333334" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
+                                <rect key="frame" x="164.66666666666666" y="341.66666666666669" width="45.666666666666657" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -480,7 +480,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6H-xs-pJ7">
-                                <rect key="frame" x="163" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
+                                <rect key="frame" x="159.33333333333334" y="441.66666666666669" width="56.333333333333343" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -488,7 +488,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3H-Mg-rWW">
-                                <rect key="frame" x="150.33333333333334" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
+                                <rect key="frame" x="146.66666666666666" y="541.66666666666663" width="81.666666666666657" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -496,7 +496,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impression" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-YG-11X">
-                                <rect key="frame" x="140.66666666666666" y="641.66666666666663" width="101" height="24.333333333333371"/>
+                                <rect key="frame" x="137" y="641.66666666666663" width="101" height="24.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -504,7 +504,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-2x-gOX">
-                                <rect key="frame" x="82.666666666666671" y="87" width="217.33333333333331" height="36"/>
+                                <rect key="frame" x="79.000000000000014" y="87" width="217.33333333333337" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -941,7 +941,7 @@
                                 <color key="tintColor" red="0.54509806630000002" green="0.37254902719999999" blue="0.1843137443" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-HZ-z53">
-                                <rect key="frame" x="212.33333333333337" y="718" width="90" height="44"/>
+                                <rect key="frame" x="205" y="718" width="90" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="2iF-YZ-ZZo"/>
                                     <constraint firstAttribute="height" constant="44" id="Ikd-Yt-wtx"/>
@@ -1160,6 +1160,22 @@
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrW-oc-DOE">
+                                <rect key="frame" x="268" y="283" width="44.666666666666742" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="47G-Yx-L8p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="tVp-uR-Wv8"/>
+                                </constraints>
+                                <color key="tintColor" name="textColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="pencil.line" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedUsernameEdit:" destination="FiD-99-QTM" eventType="touchUpInside" id="luZ-0Z-CRo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b1P-pz-xUJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1177,12 +1193,15 @@
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="PVJ-rh-01U" secondAttribute="trailing" constant="16" id="ISC-xB-gF6"/>
                             <constraint firstItem="PVJ-rh-01U" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="Qvj-Uz-ejX"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="bottom" secondItem="TE6-SS-j2V" secondAttribute="bottom" constant="20" id="T3F-ha-UoX"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="centerY" secondItem="btA-gk-EBe" secondAttribute="centerY" constant="3.5" id="THr-26-ZWT"/>
                             <constraint firstItem="tZQ-LY-Eeu" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="UZc-jW-K8p"/>
                             <constraint firstItem="YY3-44-ZQs" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="V8I-Gg-jan"/>
                             <constraint firstItem="ndf-d2-IZW" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="W8K-Q8-h9z"/>
                             <constraint firstItem="xIM-bz-gfa" firstAttribute="top" secondItem="YY3-44-ZQs" secondAttribute="bottom" constant="8" symbolic="YES" id="XkZ-d9-DV7"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="trailing" constant="1.6666666666666288" id="Xyv-Za-GTe"/>
                             <constraint firstItem="N8E-t9-kHh" firstAttribute="top" secondItem="PVJ-rh-01U" secondAttribute="bottom" constant="8" symbolic="YES" id="ZQq-7b-MNG"/>
                             <constraint firstItem="Qqv-Ty-BYq" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="ZxI-Xu-sXR"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="SrW-oc-DOE" secondAttribute="trailing" constant="62.333333333333314" id="fPR-ET-fOD"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="16" id="gfF-2J-BUc"/>
                             <constraint firstItem="PVJ-rh-01U" firstAttribute="top" secondItem="xIM-bz-gfa" secondAttribute="bottom" constant="8" symbolic="YES" id="iGQ-ah-Sqt"/>
                             <constraint firstItem="btA-gk-EBe" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="k7t-nH-ghf"/>
@@ -1198,6 +1217,7 @@
                         <outlet property="latestReview" destination="PVJ-rh-01U" id="yNc-7L-V4i"/>
                         <outlet property="reviewesCount" destination="ndf-d2-IZW" id="ZcH-7O-beS"/>
                         <outlet property="summedUp" destination="xIM-bz-gfa" id="9Gj-bl-Ppt"/>
+                        <outlet property="username" destination="btA-gk-EBe" id="MOs-bI-SHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYB-Fr-ADL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1340,6 +1360,7 @@
         <image name="corn_icon" width="320" height="320"/>
         <image name="list.star" catalog="system" width="128" height="95"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="pencil.line" catalog="system" width="128" height="98"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="rye_icon" width="320" height="320"/>
