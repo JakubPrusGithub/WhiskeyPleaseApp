@@ -49,22 +49,25 @@ class ProfileView: UIViewController {
     func refreshStats(){
         if reviews.allReviewedWhiskeys.count != 0 {
             var sum = 0
+            var highestRated: ReviewedWhiskey?
             for review in reviews.allReviewedWhiskeys {
                 sum += review.overall
+                if review.overall > highestRated?.overall ?? 0{
+                    highestRated = review
+                }
             }
             let average = sum / reviews.allReviewedWhiskeys.count
-            let lastReview = reviews.allReviewedWhiskeys[0].whiskeyName
             
             reviewesCount.text = "Number of reviewed whiskeys: \(reviews.allReviewedWhiskeys.count)"
             averageRating.text = "Average rating: \(average)"
             summedUp.text = "All ratings summed up: \(sum)"
-            latestReview.text = "Latest review: \(lastReview)"
+            latestReview.text = "Highest rated: \(highestRated?.whiskeyName ?? "None")"
         }
         else{
             reviewesCount.text = "Number of reviewed whiskeys: 0"
             averageRating.text = "Average rating: 0"
             summedUp.text = "All ratings summed up: 0"
-            latestReview.text = "Latest review: None"
+            latestReview.text = "Highest rated: None"
         }
     }
 
