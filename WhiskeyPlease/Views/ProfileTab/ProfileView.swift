@@ -37,10 +37,10 @@ class ProfileView: UIViewController {
         title="Profile"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        let dateFormatter = DateFormatter()
-        let today = String(Date.now.formatted(date: .long, time: .omitted))
-        dateFormatter.dateFormat = "dd.MM.yy"
-        accountCreated.text = "Account created at: \(today)" // doesnt save
+//        let dateFormatter = DateFormatter()
+//        let today = String(Date.now.formatted(date: .long, time: .omitted))
+//        dateFormatter.dateFormat = "dd.MM.yy"
+        accountCreated.text = "Account created at: \(reviews.createdDate)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +49,7 @@ class ProfileView: UIViewController {
     }
     
     func refreshStats(){
+        username.text = reviews.profileNickname
         if reviews.allReviewedWhiskeys.count != 0 {
             var sum = 0
             var highestRated: ReviewedWhiskey?
@@ -76,9 +77,10 @@ class ProfileView: UIViewController {
     @IBAction func clickedUsernameEdit(_ sender: Any) {
         let alert = UIAlertController(title: "Enter your username", message: "", preferredStyle: .alert)
         alert.addTextField()
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {[weak self] conetext in
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {[weak self] _ in
             let usernameTextField = alert.textFields![0]
-            self?.username.text = usernameTextField.text // doesnt save
+            self?.reviews.changeNickname(nickname: usernameTextField.text ?? "Anonymous")
+            self?.refreshStats()
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)

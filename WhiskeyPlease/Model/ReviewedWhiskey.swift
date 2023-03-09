@@ -14,23 +14,46 @@ class AllReviewedWhiskeys {
     static let shared = AllReviewedWhiskeys()
     
     var allReviewedWhiskeys: [ReviewedWhiskey]
+    var profileNickname: String
+    var createdDate: String
     
     private init() {
         self.allReviewedWhiskeys = [ReviewedWhiskey]()
+        self.profileNickname = "Nickname"
+        let dateFormatter = DateFormatter()
+        let today = String(Date.now.formatted(date: .long, time: .omitted))
+        dateFormatter.dateFormat = "dd.MM.yy"
+        self.createdDate = today
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
+        let requestWhiskey = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
         do{
-            let results: NSArray = try context.fetch(request) as NSArray
+            let results: NSArray = try context.fetch(requestWhiskey) as NSArray
             for result in results {
                 let whiskey = result as! Whiskey
                 allReviewedWhiskeys.insert(ReviewedWhiskey(id: whiskey.id, whiskeyName: whiskey.whiskeyName, taste: Int(truncating: whiskey.taste), nose: Int(truncating: whiskey.nose), finish: Int(truncating: whiskey.finish), presence: Int(truncating: whiskey.presence), impression: Int(truncating: whiskey.impression)), at: 0)
             }
         }
         catch{
-            print("Failed to load \(error.localizedDescription)")
+            print("Failed to load whiskeys: \(error.localizedDescription)")
         }
+        
+        let requestProfile = NSFetchRequest<NSFetchRequestResult>(entityName: "Profile")
+        do{
+            let results: NSArray = try context.fetch(requestProfile) as NSArray
+            for result in results {
+                let data = result as! Profile
+                self.profileNickname = data.nickname
+                self.createdDate = data.createdDate
+                data.createdDate = self.createdDate
+                try context.save()
+            }
+        }
+        catch{
+            print("Failed to load profile info: \(error.localizedDescription)")
+        }
+        
         
 //        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Jack Daniel's", taste: 8, nose: 9, finish: 4, presence: 7, impression: 9))
 //        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "The Famous Grouse", taste: 4, nose: 3, finish: 7, presence: 7, impression: 6))
@@ -128,6 +151,42 @@ class AllReviewedWhiskeys {
                 let whiskey = result as! Whiskey
                 context.delete(whiskey)
                 try context.save()
+            }
+        }
+        catch{
+            print("Failed to load \(error.localizedDescription)")
+        }
+    }
+    
+    func changeNickname(nickname: String){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Profile")
+        do{
+            let results: NSArray = try context.fetch(request) as NSArray
+            if results.isEqual(to: []){
+                print("puste")
+                let entity = NSEntityDescription.entity(forEntityName: "Profile", in: context)
+                let newNickname = Profile(entity: entity!, insertInto: context)
+                newNickname.nickname = nickname
+                newNickname.createdDate = self.createdDate
+                do{
+                    try context.save()
+                    self.profileNickname = nickname
+                }
+                catch{
+                    print("Failed to save \(error.localizedDescription)")
+                }
+            }
+            else{
+                for result in results {
+                    let data = result as! Profile
+                    data.nickname = nickname
+                    self.profileNickname = nickname
+                    print("sejvik")
+                    try context.save()
+                }
             }
         }
         catch{

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D328271F29B172E900B1677A /* WhiskeyPlease.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D328271D29B172E900B1677A /* WhiskeyPlease.xcdatamodeld */; };
 		D328272129B1745100B1677A /* WhiskeyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328272029B1745100B1677A /* WhiskeyCoreData.swift */; };
+		D328273D29BA21C500B1677A /* ProfileCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328273C29BA21C500B1677A /* ProfileCoreData.swift */; };
 		D35626EA2978925E00926239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626E92978925E00926239 /* AppDelegate.swift */; };
 		D35626EC2978925E00926239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626EB2978925E00926239 /* SceneDelegate.swift */; };
 		D35626EE2978925E00926239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626ED2978925E00926239 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		D328271E29B172E900B1677A /* WhiskeyPlease.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiskeyPlease.xcdatamodel; sourceTree = "<group>"; };
 		D328272029B1745100B1677A /* WhiskeyCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskeyCoreData.swift; sourceTree = "<group>"; };
+		D328273C29BA21C500B1677A /* ProfileCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoreData.swift; sourceTree = "<group>"; };
 		D35626E62978925E00926239 /* WhiskeyPlease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskeyPlease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35626E92978925E00926239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35626EB2978925E00926239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,8 +173,9 @@
 		D3B6817B299AF1D80036434C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
 				D328272029B1745100B1677A /* WhiskeyCoreData.swift */,
+				D328273C29BA21C500B1677A /* ProfileCoreData.swift */,
+				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
 				D328271D29B172E900B1677A /* WhiskeyPlease.xcdatamodeld */,
 			);
 			path = Model;
@@ -283,6 +286,7 @@
 				D35A6A2B29898C7200E4CAD2 /* LoadArticles.swift in Sources */,
 				D35A6A64298C7A2C00E4CAD2 /* ProfileView.swift in Sources */,
 				D39491BD2992F9E300DA3A13 /* RatingController.swift in Sources */,
+				D328273D29BA21C500B1677A /* ProfileCoreData.swift in Sources */,
 				D35A6A6829916A1500E4CAD2 /* ReviewedWhiskeyCollectionViewCell.swift in Sources */,
 				D35A6A62298C712100E4CAD2 /* MyWhiskeysView.swift in Sources */,
 				D3562702297DF3C100926239 /* ArticleTableViewCell.swift in Sources */,

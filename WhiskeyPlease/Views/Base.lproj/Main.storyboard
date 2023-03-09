@@ -1084,40 +1084,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-Ty-BYq">
-                                <rect key="frame" x="112.66666666666669" y="132" width="150" height="148.66666666666669"/>
-                                <color key="tintColor" red="0.41568624970000001" green="0.2823529541" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="6lk-vx-M3i"/>
-                                    <constraint firstAttribute="width" constant="150" id="HCK-CY-Otk"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btA-gk-EBe">
-                                <rect key="frame" x="109.00000000000001" y="281" width="157.33333333333337" height="41"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="35"/>
+                                <rect key="frame" x="104.33333333333333" y="123" width="166.33333333333337" height="43"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="37"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of reviewed whiskeys: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-d2-IZW">
-                                <rect key="frame" x="16" y="411" width="343" height="24"/>
+                                <rect key="frame" x="16" y="309" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Vye-hO-1sJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-44-ZQs">
-                                <rect key="frame" x="16" y="443" width="343" height="24"/>
+                                <rect key="frame" x="16" y="341" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="tlr-6C-PRp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All ratings summed up:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-bz-gfa">
-                                <rect key="frame" x="16" y="475" width="343" height="24"/>
+                                <rect key="frame" x="16" y="373" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="cuX-R6-tsE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest review: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-rh-01U">
-                                <rect key="frame" x="16" y="507" width="343" height="24"/>
+                                <rect key="frame" x="16" y="405" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="vz3-4n-jtt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1136,7 +1140,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-Eg-Zsx">
-                                <rect key="frame" x="145" y="362" width="85" height="29"/>
+                                <rect key="frame" x="145" y="260" width="85" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="uDo-N4-8fV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
@@ -1155,16 +1162,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account created at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-t9-kHh">
-                                <rect key="frame" x="16" y="539" width="343" height="24"/>
+                                <rect key="frame" x="16" y="437" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="xK2-PY-ie8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrW-oc-DOE">
-                                <rect key="frame" x="268" y="283" width="44.666666666666742" height="44"/>
+                                <rect key="frame" x="275.33333333333331" y="125" width="51.333333333333314" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="47G-Yx-L8p"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="tVp-uR-Wv8"/>
+                                    <constraint firstAttribute="height" constant="44" id="8yM-OA-Xsn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="fUT-rb-K3T"/>
                                 </constraints>
                                 <color key="tintColor" name="textColor"/>
                                 <state key="normal" title="Button"/>
@@ -1180,34 +1190,33 @@
                         <viewLayoutGuide key="safeArea" id="b1P-pz-xUJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="ndf-d2-IZW" secondAttribute="trailing" constant="16" id="3pn-oF-U7m"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="xIM-bz-gfa" secondAttribute="trailing" constant="16" id="549-o1-FEu"/>
-                            <constraint firstItem="TE6-SS-j2V" firstAttribute="top" secondItem="tZQ-LY-Eeu" secondAttribute="bottom" constant="20" id="8kS-Yz-FaC"/>
-                            <constraint firstItem="xIM-bz-gfa" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="9vV-0h-qs1"/>
-                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="AYa-uZ-ZRZ"/>
-                            <constraint firstItem="YY3-44-ZQs" firstAttribute="top" secondItem="ndf-d2-IZW" secondAttribute="bottom" constant="8" symbolic="YES" id="CsV-vc-oNX"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="YY3-44-ZQs" secondAttribute="trailing" constant="16" id="D56-N8-4mz"/>
-                            <constraint firstItem="TE6-SS-j2V" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="FU2-n9-WBL"/>
-                            <constraint firstItem="btA-gk-EBe" firstAttribute="top" secondItem="Qqv-Ty-BYq" secondAttribute="bottom" id="Fn2-UJ-9AW"/>
-                            <constraint firstItem="ndf-d2-IZW" firstAttribute="top" secondItem="t6s-Eg-Zsx" secondAttribute="bottom" constant="20" id="INI-nV-XRp"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="PVJ-rh-01U" secondAttribute="trailing" constant="16" id="ISC-xB-gF6"/>
-                            <constraint firstItem="PVJ-rh-01U" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="Qvj-Uz-ejX"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="bottom" secondItem="TE6-SS-j2V" secondAttribute="bottom" constant="20" id="T3F-ha-UoX"/>
-                            <constraint firstItem="SrW-oc-DOE" firstAttribute="centerY" secondItem="btA-gk-EBe" secondAttribute="centerY" constant="3.5" id="THr-26-ZWT"/>
-                            <constraint firstItem="tZQ-LY-Eeu" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="UZc-jW-K8p"/>
-                            <constraint firstItem="YY3-44-ZQs" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="V8I-Gg-jan"/>
-                            <constraint firstItem="ndf-d2-IZW" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="W8K-Q8-h9z"/>
-                            <constraint firstItem="xIM-bz-gfa" firstAttribute="top" secondItem="YY3-44-ZQs" secondAttribute="bottom" constant="8" symbolic="YES" id="XkZ-d9-DV7"/>
-                            <constraint firstItem="SrW-oc-DOE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="trailing" constant="1.6666666666666288" id="Xyv-Za-GTe"/>
-                            <constraint firstItem="N8E-t9-kHh" firstAttribute="top" secondItem="PVJ-rh-01U" secondAttribute="bottom" constant="8" symbolic="YES" id="ZQq-7b-MNG"/>
-                            <constraint firstItem="Qqv-Ty-BYq" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="ZxI-Xu-sXR"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="SrW-oc-DOE" secondAttribute="trailing" constant="62.333333333333314" id="fPR-ET-fOD"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="16" id="gfF-2J-BUc"/>
-                            <constraint firstItem="PVJ-rh-01U" firstAttribute="top" secondItem="xIM-bz-gfa" secondAttribute="bottom" constant="8" symbolic="YES" id="iGQ-ah-Sqt"/>
-                            <constraint firstItem="btA-gk-EBe" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="k7t-nH-ghf"/>
-                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="top" secondItem="btA-gk-EBe" secondAttribute="bottom" constant="40" id="pJL-TA-oIl"/>
-                            <constraint firstItem="N8E-t9-kHh" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="syh-HR-vyl"/>
-                            <constraint firstItem="Qqv-Ty-BYq" firstAttribute="centerY" secondItem="Kvh-NX-lvn" secondAttribute="centerY" constant="-200" id="taG-zH-H2s"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="PVJ-rh-01U" secondAttribute="trailing" constant="16" id="14V-XI-yvh"/>
+                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="5ay-Pe-oN5"/>
+                            <constraint firstItem="PVJ-rh-01U" firstAttribute="top" secondItem="xIM-bz-gfa" secondAttribute="bottom" constant="8" symbolic="YES" id="94x-7G-MuW"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="16" id="DwQ-dP-6Bm"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="bottom" secondItem="TE6-SS-j2V" secondAttribute="bottom" constant="20" id="FIa-Xt-PBK"/>
+                            <constraint firstItem="tZQ-LY-Eeu" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="GHJ-Ja-RG9"/>
+                            <constraint firstItem="TE6-SS-j2V" firstAttribute="top" secondItem="tZQ-LY-Eeu" secondAttribute="bottom" constant="20" id="OHt-Wq-VVy"/>
+                            <constraint firstItem="N8E-t9-kHh" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="PHQ-CR-29D"/>
+                            <constraint firstItem="xIM-bz-gfa" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="U2P-mZ-8eH"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="leading" secondItem="btA-gk-EBe" secondAttribute="trailing" constant="4.6666666666666856" id="Vw2-eK-4If"/>
+                            <constraint firstItem="btA-gk-EBe" firstAttribute="top" secondItem="b1P-pz-xUJ" secondAttribute="top" constant="32" id="Wee-wa-LDF"/>
+                            <constraint firstItem="YY3-44-ZQs" firstAttribute="top" secondItem="ndf-d2-IZW" secondAttribute="bottom" constant="8" symbolic="YES" id="a4F-ZD-Oe8"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="ndf-d2-IZW" secondAttribute="trailing" constant="16" id="aFf-38-bhL"/>
+                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="top" relation="lessThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="bottom" constant="112" id="aLI-On-Wbx"/>
+                            <constraint firstItem="ndf-d2-IZW" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="afI-yf-2EB"/>
+                            <constraint firstItem="TE6-SS-j2V" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="bni-L9-VkQ"/>
+                            <constraint firstItem="btA-gk-EBe" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="cKN-wm-ZHs"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="xIM-bz-gfa" secondAttribute="trailing" constant="16" id="gAT-Ve-pKu"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="YY3-44-ZQs" secondAttribute="trailing" constant="16" id="gGB-af-bbd"/>
+                            <constraint firstItem="ndf-d2-IZW" firstAttribute="top" secondItem="t6s-Eg-Zsx" secondAttribute="bottom" constant="20" id="hSe-cy-rCd"/>
+                            <constraint firstItem="PVJ-rh-01U" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="oIw-DL-pH5"/>
+                            <constraint firstItem="tZQ-LY-Eeu" firstAttribute="top" secondItem="N8E-t9-kHh" secondAttribute="bottom" constant="140" id="oRO-RK-HgI"/>
+                            <constraint firstItem="YY3-44-ZQs" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="p8M-Hm-7Nd"/>
+                            <constraint firstItem="xIM-bz-gfa" firstAttribute="top" secondItem="YY3-44-ZQs" secondAttribute="bottom" constant="8" symbolic="YES" id="pAT-36-dqX"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="top" secondItem="b1P-pz-xUJ" secondAttribute="top" constant="34" id="qde-Ak-NjN"/>
+                            <constraint firstItem="N8E-t9-kHh" firstAttribute="top" secondItem="PVJ-rh-01U" secondAttribute="bottom" constant="8" symbolic="YES" id="rSS-Wy-fLQ"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrW-oc-DOE" secondAttribute="trailing" symbolic="YES" id="yyu-cf-Kbt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RLP-g8-Ruo"/>
@@ -1362,7 +1371,6 @@
         <image name="newspaper" catalog="system" width="128" height="111"/>
         <image name="pencil.line" catalog="system" width="128" height="98"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="rye_icon" width="320" height="320"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="wheat_icon" width="112" height="320"/>
