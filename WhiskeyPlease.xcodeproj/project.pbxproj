@@ -94,6 +94,7 @@
 			children = (
 				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
 				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
+				D35A6A2A29898C7200E4CAD2 /* LoadArticles.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				D35A6A2829898C4400E4CAD2 /* articles.json */,
-				D35A6A2A29898C7200E4CAD2 /* LoadArticles.swift */,
 				D35A6A2C29898CCE00E4CAD2 /* ArticleStructs.swift */,
 			);
 			path = JSON;

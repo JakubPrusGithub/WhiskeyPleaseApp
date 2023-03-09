@@ -36,10 +36,6 @@ class ProfileView: UIViewController {
         
         title="Profile"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-//        let dateFormatter = DateFormatter()
-//        let today = String(Date.now.formatted(date: .long, time: .omitted))
-//        dateFormatter.dateFormat = "dd.MM.yy"
         accountCreated.text = "Account created at: \(reviews.createdDate)"
     }
     

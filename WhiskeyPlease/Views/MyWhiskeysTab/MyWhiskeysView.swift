@@ -9,8 +9,6 @@ import UIKit
 
 class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
     
-    //UIContextMenuInteractionDelegate
-    
     var reviews = AllReviewedWhiskeys.shared
     var editMode = false
     
@@ -74,7 +72,6 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         let currReview = reviews.allReviewedWhiskeys[id]
         editWhiskey(review: currReview)
     }
-    //name: String = "", tase: Int = 0, nose: Int = 0, finish: Int = 0, presence: Int = 0, impression: Int = 0
     func editWhiskey(review: ReviewedWhiskey = ReviewedWhiskey(whiskeyName: "", taste: 0, nose: 0, finish: 0, presence: 0, impression: 0)){
         let reviewSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReviewSheet") as! AddingReviewViewController
         if let sheet = reviewSheet.sheetPresentationController {
@@ -154,18 +151,4 @@ class MyWhiskeysView: UICollectionViewController, UpdateViewWithNewReview {
         reviews.deleteReview(review: deleteReview)
         disableEditing()
     }
-    
-//    func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration? {
-//        var menuItems: [UIAction] {
-//            return [
-//                UIAction(title: "Edit", image: UIImage(systemName: "pencil"), handler: { (_) in
-//                }),
-//                UIAction(title: "Delete", image: UIImage(systemName: "trash"), attributes: .destructive, handler: { (_) in
-//                })
-//            ]
-//        }
-//        return UIContextMenuConfiguration(actionProvider: { _ in
-//            UIMenu(title: "", children: menuItems)
-//        })
-//    }
 }
