@@ -79,7 +79,9 @@ class ProfileView: UIViewController {
         alert.addTextField()
         alert.addAction(UIAlertAction(title: "Done", style: .default, handler: {[weak self] _ in
             let usernameTextField = alert.textFields![0]
-            self?.reviews.changeNickname(nickname: usernameTextField.text ?? "Anonymous")
+            guard let nickname = usernameTextField.text else { return }
+            if nickname.isEmpty { return }
+            self?.reviews.changeNickname(nickname: nickname)
             self?.refreshStats()
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

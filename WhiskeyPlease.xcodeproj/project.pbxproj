@@ -10,6 +10,7 @@
 		D328271F29B172E900B1677A /* WhiskeyPlease.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D328271D29B172E900B1677A /* WhiskeyPlease.xcdatamodeld */; };
 		D328272129B1745100B1677A /* WhiskeyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328272029B1745100B1677A /* WhiskeyCoreData.swift */; };
 		D328273D29BA21C500B1677A /* ProfileCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328273C29BA21C500B1677A /* ProfileCoreData.swift */; };
+		D328274029BA67B900B1677A /* ReviewedWhiskeyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328273F29BA67B900B1677A /* ReviewedWhiskeyStruct.swift */; };
 		D35626EA2978925E00926239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626E92978925E00926239 /* AppDelegate.swift */; };
 		D35626EC2978925E00926239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626EB2978925E00926239 /* SceneDelegate.swift */; };
 		D35626EE2978925E00926239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35626ED2978925E00926239 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		D328271E29B172E900B1677A /* WhiskeyPlease.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiskeyPlease.xcdatamodel; sourceTree = "<group>"; };
 		D328272029B1745100B1677A /* WhiskeyCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskeyCoreData.swift; sourceTree = "<group>"; };
 		D328273C29BA21C500B1677A /* ProfileCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoreData.swift; sourceTree = "<group>"; };
+		D328273F29BA67B900B1677A /* ReviewedWhiskeyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewedWhiskeyStruct.swift; sourceTree = "<group>"; };
 		D35626E62978925E00926239 /* WhiskeyPlease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskeyPlease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35626E92978925E00926239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35626EB2978925E00926239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,16 +58,16 @@
 		D35A6A2829898C4400E4CAD2 /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
 		D35A6A2A29898C7200E4CAD2 /* LoadArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadArticles.swift; sourceTree = "<group>"; };
 		D35A6A2C29898CCE00E4CAD2 /* ArticleStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStructs.swift; sourceTree = "<group>"; };
-		D35A6A332989BA8F00E4CAD2 /* johnniewalkerIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = johnniewalkerIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A342989BA8F00E4CAD2 /* ballantinesIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ballantinesIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A352989BA8F00E4CAD2 /* jackdanielsIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jackdanielsIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A362989BA8F00E4CAD2 /* jamesonIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jamesonIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A372989BA8F00E4CAD2 /* jimbeamIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jimbeamIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A3D298AECFB00E4CAD2 /* grantsIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grantsIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A3E298AECFB00E4CAD2 /* yamazakiIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yamazakiIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A3F298AECFB00E4CAD2 /* makersmarkIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = makersmarkIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A40298AECFB00E4CAD2 /* tullamoredewIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tullamoredewIcon.jpeg; sourceTree = "<group>"; };
-		D35A6A41298AECFB00E4CAD2 /* thefamousgrouseIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thefamousgrouseIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A332989BA8F00E4CAD2 /* johnniewalkerIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = johnniewalkerIcon.jpeg; path = ../Model/JSON/johnniewalkerIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A342989BA8F00E4CAD2 /* ballantinesIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ballantinesIcon.jpeg; path = ../Model/JSON/ballantinesIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A352989BA8F00E4CAD2 /* jackdanielsIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jackdanielsIcon.jpeg; path = ../Model/JSON/jackdanielsIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A362989BA8F00E4CAD2 /* jamesonIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jamesonIcon.jpeg; path = ../Model/JSON/jamesonIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A372989BA8F00E4CAD2 /* jimbeamIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jimbeamIcon.jpeg; path = ../Model/JSON/jimbeamIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A3D298AECFB00E4CAD2 /* grantsIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grantsIcon.jpeg; path = ../Model/JSON/grantsIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A3E298AECFB00E4CAD2 /* yamazakiIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yamazakiIcon.jpeg; path = ../Model/JSON/yamazakiIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A3F298AECFB00E4CAD2 /* makersmarkIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = makersmarkIcon.jpeg; path = ../Model/JSON/makersmarkIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A40298AECFB00E4CAD2 /* tullamoredewIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tullamoredewIcon.jpeg; path = ../Model/JSON/tullamoredewIcon.jpeg; sourceTree = "<group>"; };
+		D35A6A41298AECFB00E4CAD2 /* thefamousgrouseIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thefamousgrouseIcon.jpeg; path = ../Model/JSON/thefamousgrouseIcon.jpeg; sourceTree = "<group>"; };
 		D35A6A61298C712100E4CAD2 /* MyWhiskeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWhiskeysView.swift; sourceTree = "<group>"; };
 		D35A6A63298C7A2C00E4CAD2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewedWhiskey.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		D365E21C2980328F00CE9CFE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		D39491BC2992F9E300DA3A13 /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
 		D39491BE2993AA8E00DA3A13 /* AddingReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingReviewViewController.swift; sourceTree = "<group>"; };
-		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpeg; sourceTree = "<group>"; };
+		D3FC2CF8297F3B0600BD0485 /* default.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpeg; path = ../Model/JSON/default.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D328273E29BA679900B1677A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
+				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D35626DD2978925E00926239 = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +117,8 @@
 		D35626E82978925E00926239 /* WhiskeyPlease */ = {
 			isa = PBXGroup;
 			children = (
+				D328273E29BA679900B1677A /* Controllers */,
 				D3B6817B299AF1D80036434C /* Model */,
-				D35A6A322989BA5000E4CAD2 /* ArticleIcons */,
-				D35A6A2F2989935800E4CAD2 /* JSON */,
 				D35A6A2E2989933B00E4CAD2 /* Views */,
 				D35626E92978925E00926239 /* AppDelegate.swift */,
 				D35626EB2978925E00926239 /* SceneDelegate.swift */,
@@ -122,11 +132,10 @@
 		D35A6A2E2989933B00E4CAD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D35626EF2978925E00926239 /* Main.storyboard */,
-				D39491BC2992F9E300DA3A13 /* RatingController.swift */,
 				D3B6817A299AF1730036434C /* ArticlesTab */,
 				D3B6817D299AF2810036434C /* MyWhiskeysTab */,
 				D3B6817C299AF2670036434C /* ProfileTab */,
+				D35626EF2978925E00926239 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,7 +166,7 @@
 				D35A6A3E298AECFB00E4CAD2 /* yamazakiIcon.jpeg */,
 			);
 			name = ArticleIcons;
-			path = JSON;
+			path = ../JSON;
 			sourceTree = "<group>";
 		};
 		D3B6817A299AF1730036434C /* ArticlesTab */ = {
@@ -173,9 +182,11 @@
 		D3B6817B299AF1D80036434C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D35A6A322989BA5000E4CAD2 /* ArticleIcons */,
+				D35A6A2F2989935800E4CAD2 /* JSON */,
 				D328272029B1745100B1677A /* WhiskeyCoreData.swift */,
 				D328273C29BA21C500B1677A /* ProfileCoreData.swift */,
-				D35A6A6529906A1300E4CAD2 /* ReviewedWhiskey.swift */,
+				D328273F29BA67B900B1677A /* ReviewedWhiskeyStruct.swift */,
 				D328271D29B172E900B1677A /* WhiskeyPlease.xcdatamodeld */,
 			);
 			path = Model;
@@ -284,6 +295,7 @@
 			files = (
 				D328271F29B172E900B1677A /* WhiskeyPlease.xcdatamodeld in Sources */,
 				D35A6A2B29898C7200E4CAD2 /* LoadArticles.swift in Sources */,
+				D328274029BA67B900B1677A /* ReviewedWhiskeyStruct.swift in Sources */,
 				D35A6A64298C7A2C00E4CAD2 /* ProfileView.swift in Sources */,
 				D39491BD2992F9E300DA3A13 /* RatingController.swift in Sources */,
 				D328273D29BA21C500B1677A /* ProfileCoreData.swift in Sources */,

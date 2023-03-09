@@ -44,14 +44,7 @@ class ArticleDetailView: UIViewController {
         
         view.layer.insertSublayer(gradientLayer, at: 0)
         
-//        let appearance = UINavigationBarAppearance()
-//        appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "detailViewTitleColor")!]
-//        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "detailViewTitleColor")!, .font: "Kerl"]
-//
-//        navigationItem.standardAppearance = appearance
-//        navigationItem.scrollEdgeAppearance = appearance
-        
-        shortDesc.textContainer.exclusionPaths = [UIBezierPath(rect: CGRect(x: 225, y: 0, width: 200, height: 135))]
+        shortDesc.textContainer.exclusionPaths = [UIBezierPath(rect: CGRect(x: 235, y: 0, width: 200, height: 135))]
         shortDesc.layer.shadowRadius = 2.0
         shortDesc.layer.shadowOpacity = 1.0
         shortDesc.layer.shadowColor = UIColor.black.cgColor

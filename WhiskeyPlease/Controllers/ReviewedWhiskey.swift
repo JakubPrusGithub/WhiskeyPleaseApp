@@ -53,12 +53,6 @@ class AllReviewedWhiskeys {
         catch{
             print("Failed to load profile info: \(error.localizedDescription)")
         }
-        
-        
-//        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Jack Daniel's", taste: 8, nose: 9, finish: 4, presence: 7, impression: 9))
-//        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "The Famous Grouse", taste: 4, nose: 3, finish: 7, presence: 7, impression: 6))
-//        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Johnnie Walker Black Label", taste: 10, nose: 7, finish: 8, presence: 9, impression: 9))
-//        self.allReviewedWhiskeys.append(ReviewedWhiskey(whiskeyName: "Ballantine's", taste: 7, nose: 7, finish: 5, presence: 6, impression: 7))
     }
     
     func addReview(_ review: ReviewedWhiskey){
@@ -166,7 +160,6 @@ class AllReviewedWhiskeys {
         do{
             let results: NSArray = try context.fetch(request) as NSArray
             if results.isEqual(to: []){
-                print("puste")
                 let entity = NSEntityDescription.entity(forEntityName: "Profile", in: context)
                 let newNickname = Profile(entity: entity!, insertInto: context)
                 newNickname.nickname = nickname
@@ -184,7 +177,6 @@ class AllReviewedWhiskeys {
                     let data = result as! Profile
                     data.nickname = nickname
                     self.profileNickname = nickname
-                    print("sejvik")
                     try context.save()
                 }
             }
@@ -193,26 +185,4 @@ class AllReviewedWhiskeys {
             print("Failed to load \(error.localizedDescription)")
         }
     }
-}
-
-
-
-struct ReviewedWhiskey: Codable {
-    
-    var id = UUID()
-    var whiskeyName: String
-    
-    // 1-10 rating
-    var taste: Int
-    var nose: Int
-    var finish: Int
-    var presence: Int
-    var impression: Int
-    
-    // all evaluation criteria summed up and doubled
-    var overall: Int {
-        return (taste+nose+finish+presence+impression)*2
-    }
-
-    static let example = ReviewedWhiskey(whiskeyName: "Example Whiskey", taste: 2, nose: 4, finish: 6, presence: 8, impression: 10)
 }

@@ -94,28 +94,39 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="had-5Q-XQJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8F-U5-jeJ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8F-U5-jeJ">
                                                 <rect key="frame" x="245" y="28" width="177" height="176"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiskey_and_glass_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-JX-l7k">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiskey_and_glass_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-JX-l7k">
                                                         <rect key="frame" x="8" y="24" width="122" height="129"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="176" id="9U0-4f-E4V"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kKB-JX-l7k" secondAttribute="trailing" constant="47" id="NKI-I0-Nhs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kKB-JX-l7k" secondAttribute="bottom" constant="23" id="SEg-3D-vf3"/>
+                                                    <constraint firstAttribute="width" constant="177" id="oHh-Jd-CRF"/>
+                                                    <constraint firstItem="kKB-JX-l7k" firstAttribute="top" secondItem="E8F-U5-jeJ" secondAttribute="top" constant="24" id="xdn-K4-sk8"/>
+                                                    <constraint firstItem="kKB-JX-l7k" firstAttribute="leading" secondItem="E8F-U5-jeJ" secondAttribute="leading" constant="8" id="yJO-Pe-vOC"/>
+                                                </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMj-Mw-V3I">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMj-Mw-V3I">
                                                 <rect key="frame" x="11" y="23" width="229" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="229" id="Hrp-wM-kOs"/>
+                                                    <constraint firstAttribute="height" constant="42" id="x4u-hM-LaI"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                                 <color key="textColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
-                                                <rect key="frame" x="8" y="70" width="359" height="281"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LV-hn-zCJ">
+                                                <rect key="frame" x="8" y="70" width="359" height="279"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="279" id="VtK-2w-ril"/>
+                                                </constraints>
                                                 <string key="text">Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It originated in the Scottish burgh of Kilmarnock in East Ayrshire. The brand was first established by grocer John Walker. It is the most widely distributed brand of blended Scotch whisky in the world, sold in almost every country, with annual sales of the equivalent of over 223.7 million 700 ml bottles in 2016. The fun fact is that Winston Churchill's favourite whisky was Johnnie Walker Red Label, which he mixed with a large amount of water.</string>
                                                 <color key="textColor" name="textColor"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
@@ -125,51 +136,59 @@
                                                 <rect key="frame" x="11" y="400" width="364" height="154"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wheat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-c6-jay">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-c6-jay">
                                                         <rect key="frame" x="0.0" y="15" width="83" height="87"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="83" id="VUm-qV-xlQ"/>
+                                                            <constraint firstAttribute="height" constant="87" id="ahb-Bw-c1V"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rye_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-6f-ZjI">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rye_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-6f-ZjI">
                                                         <rect key="frame" x="85" y="22" width="80" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="HJZ-lo-eZH"/>
+                                                            <constraint firstAttribute="width" constant="80" id="tHT-48-Z41"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corn_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-nm-tlZ">
-                                                        <rect key="frame" x="178" y="22" width="80" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corn_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-nm-tlZ">
+                                                        <rect key="frame" x="178" y="22" width="83" height="80"/>
                                                         <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="83" id="MU8-vw-PZY"/>
+                                                            <constraint firstAttribute="height" constant="80" id="NIT-Qd-ehw"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barley_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-KL-wn0">
-                                                        <rect key="frame" x="269" y="22" width="76" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barley_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-KL-wn0">
+                                                        <rect key="frame" x="269" y="22" width="87" height="80"/>
                                                         <color key="tintColor" systemColor="quaternaryLabelColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="2E2-IS-nbM"/>
+                                                            <constraint firstAttribute="width" constant="87" id="9A5-zM-Z1F"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-iS-aA0">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-iS-aA0">
                                                         <rect key="frame" x="11" y="111" width="58" height="24"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                                         <color key="textColor" systemColor="quaternaryLabelColor"/>
                                                         <color key="highlightedColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-N7-5sj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-N7-5sj">
                                                         <rect key="frame" x="109" y="111" width="33" height="24"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                                         <color key="textColor" systemColor="quaternaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-Cv-iRz">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-Cv-iRz">
                                                         <rect key="frame" x="284" y="111" width="58" height="24"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.086274504660000001" green="0.086274504660000001" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                                         <color key="textColor" systemColor="placeholderTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-8s-qAn">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abI-8s-qAn">
                                                         <rect key="frame" x="197" y="111" width="43" height="24"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                                         <color key="textColor" systemColor="quaternaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
@@ -177,32 +196,74 @@
                                                 </subviews>
                                                 <viewLayoutGuide key="safeArea" id="yu1-mn-ivk"/>
                                                 <color key="backgroundColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="IFn-nm-tlZ" firstAttribute="top" secondItem="yu1-mn-ivk" secondAttribute="top" constant="22" id="0mK-af-Fcn"/>
+                                                    <constraint firstItem="yu1-mn-ivk" firstAttribute="trailing" secondItem="sj0-KL-wn0" secondAttribute="trailing" constant="8" id="1z0-8V-fOL"/>
+                                                    <constraint firstItem="Maf-Cv-iRz" firstAttribute="leading" secondItem="abI-8s-qAn" secondAttribute="trailing" constant="44" id="2ab-6q-WNv"/>
+                                                    <constraint firstItem="yu1-mn-ivk" firstAttribute="bottom" secondItem="Z4p-iS-aA0" secondAttribute="bottom" constant="19" id="AVc-LK-9ON"/>
+                                                    <constraint firstItem="Qdh-c6-jay" firstAttribute="leading" secondItem="yu1-mn-ivk" secondAttribute="leading" id="FtB-Kr-Nqa"/>
+                                                    <constraint firstItem="qvP-6f-ZjI" firstAttribute="top" secondItem="yu1-mn-ivk" secondAttribute="top" constant="22" id="GUQ-Pz-tRN"/>
+                                                    <constraint firstItem="abI-8s-qAn" firstAttribute="leading" secondItem="3Ze-N7-5sj" secondAttribute="trailing" constant="55" id="JSG-lo-vsL"/>
+                                                    <constraint firstItem="3Ze-N7-5sj" firstAttribute="top" secondItem="qvP-6f-ZjI" secondAttribute="bottom" constant="9" id="XAr-6S-n9a"/>
+                                                    <constraint firstItem="IFn-nm-tlZ" firstAttribute="leading" secondItem="qvP-6f-ZjI" secondAttribute="trailing" constant="13" id="bBz-tl-tRb"/>
+                                                    <constraint firstItem="sj0-KL-wn0" firstAttribute="leading" secondItem="IFn-nm-tlZ" secondAttribute="trailing" constant="8" id="bz7-Ol-Db0"/>
+                                                    <constraint firstItem="Z4p-iS-aA0" firstAttribute="leading" secondItem="yu1-mn-ivk" secondAttribute="leading" constant="11" id="dRT-Zz-MZp"/>
+                                                    <constraint firstItem="Z4p-iS-aA0" firstAttribute="top" secondItem="Qdh-c6-jay" secondAttribute="bottom" constant="9" id="f0V-Fn-pIC"/>
+                                                    <constraint firstItem="IFn-nm-tlZ" firstAttribute="leading" secondItem="qvP-6f-ZjI" secondAttribute="trailing" constant="13" id="lTK-mu-IA4"/>
+                                                    <constraint firstItem="3Ze-N7-5sj" firstAttribute="leading" secondItem="Z4p-iS-aA0" secondAttribute="trailing" constant="40" id="mHj-UV-YMb"/>
+                                                    <constraint firstItem="Maf-Cv-iRz" firstAttribute="top" secondItem="sj0-KL-wn0" secondAttribute="bottom" constant="9" id="n5K-Vr-GCv"/>
+                                                    <constraint firstItem="abI-8s-qAn" firstAttribute="top" secondItem="IFn-nm-tlZ" secondAttribute="bottom" constant="9" id="nOQ-9g-S31"/>
+                                                    <constraint firstItem="sj0-KL-wn0" firstAttribute="top" secondItem="yu1-mn-ivk" secondAttribute="top" constant="22" id="osJ-wx-3K3"/>
+                                                    <constraint firstItem="qvP-6f-ZjI" firstAttribute="leading" secondItem="Qdh-c6-jay" secondAttribute="trailing" constant="2" id="rd0-dl-eBP"/>
+                                                    <constraint firstItem="Qdh-c6-jay" firstAttribute="top" secondItem="yu1-mn-ivk" secondAttribute="top" constant="15" id="sgk-tD-B9R"/>
+                                                    <constraint firstItem="sj0-KL-wn0" firstAttribute="leading" secondItem="IFn-nm-tlZ" secondAttribute="trailing" constant="8" id="uXp-f1-4Pp"/>
+                                                </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZB-K5-Zee">
-                                                <rect key="frame" x="11" y="350" width="156" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZB-K5-Zee">
+                                                <rect key="frame" x="11" y="348" width="156" height="44"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                                 <color key="textColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-jD-ro1">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-jD-ro1">
                                                 <rect key="frame" x="11" y="583" width="156" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                                 <color key="textColor" red="0.66274511810000003" green="0.5176470876" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-rM-LvQ">
-                                                <rect key="frame" x="8" y="633" width="359" height="848.66666666666652"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">The legendary, original John Walker was born on July 25, 1805, on Todriggs Farm, Kilmarnock, East Ayrshire, Scotland. The farm was not far from Glasgow on the west side of the island. In 1819, John’s father died, and the family farm where little Johnnie had spent the first fourteen years of his life, was sold. Though he was still but a little lad of 15, the proceeds from the sale were used to purchase a grocery store inside Kilmarnock proper. After a short time apprenticing to learn his new trade, John took over full management of his thriving business.Even though his main trade was selling groceries, over time he became well known as the go-to supplier of tea, fine wines, and spirits. He sold all kinds of alcohol, including rum, brandy, and gin, but it was his own private label whiskey that gained him recognition in the region. Most shop owners of the day stocked single malts, with inconsistent taste and texture. Mr. Walker, being a savvy businessman, made his whiskey through blending, giving him the ability to maintain good flavor quality in every bottle. In 1833, John married Elizabeth Purves, who later gave birth to their first son, Alexander. John was known locally as a member of trade associations and the Freemasons. A major flood damaged many local businesses in 1852, and reports show that his entire stock was ruined. It took almost two years to rebuild the business, but afterward, the popularity of his signature blend continued to grow until his death in 1857. After his death, the family business was taken over by Alexander. Britain was at the center of the Industrial Revolution, and with the arrival of the railroad in 1843 on his side, Alexander Walker created a distribution network that shipped John’s whiskey worldwide. The first copyrighted blend, called “Old Highland Whisky,” hit the shelves in 1867. This recipe is a direct ancestor of what we know call Johnnie Walker Black Label. The company has continued to grow, of course, adding Blue, Double Black, Gold, and Platinum label Johnnie Walker to the line. Now among a portfolio of brands owned by a large international company, the whiskey is no longer distilled in Kilmarnock, and the original plant has been demolished. Though the facilities are gone, you’ll still find the resilient, Scottish spirit of the original Johnnie Walker in every sip.</string>
-                                                <color key="textColor" name="textColor"/>
-                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwy-rM-LvQ">
+                                                <rect key="frame" x="8" y="626" width="359" height="848.66666666666652"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">The legendary, original John Walker was born on July 25, 1805, on Todriggs Farm, Kilmarnock, East Ayrshire, Scotland. The farm was not far from Glasgow on the west side of the island. In 1819, John’s father died, and the family farm where little Johnnie had spent the first fourteen years of his life, was sold. Though he was still but a little lad of 15, the proceeds from the sale were used to purchase a grocery store inside Kilmarnock proper. After a short time apprenticing to learn his new trade, John took over full management of his thriving business.Even though his main trade was selling groceries, over time he became well known as the go-to supplier of tea, fine wines, and spirits. He sold all kinds of alcohol, including rum, brandy, and gin, but it was his own private label whiskey that gained him recognition in the region. Most shop owners of the day stocked single malts, with inconsistent taste and texture. Mr. Walker, being a savvy businessman, made his whiskey through blending, giving him the ability to maintain good flavor quality in every bottle. In 1833, John married Elizabeth Purves, who later gave birth to their first son, Alexander. John was known locally as a member of trade associations and the Freemasons. A major flood damaged many local businesses in 1852, and reports show that his entire stock was ruined. It took almost two years to rebuild the business, but afterward, the popularity of his signature blend continued to grow until his death in 1857. After his death, the family business was taken over by Alexander. Britain was at the center of the Industrial Revolution, and with the arrival of the railroad in 1843 on his side, Alexander Walker created a distribution network that shipped John’s whiskey worldwide. The first copyrighted blend, called “Old Highland Whisky,” hit the shelves in 1867. This recipe is a direct ancestor of what we know call Johnnie Walker Black Label. The company has continued to grow, of course, adding Blue, Double Black, Gold, and Platinum label Johnnie Walker to the line. Now among a portfolio of brands owned by a large international company, the whiskey is no longer distilled in Kilmarnock, and the original plant has been demolished. Though the facilities are gone, you’ll still find the resilient, Scottish spirit of the original Johnnie Walker in every sip.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor"/>
+                                                            <font key="NSFont" size="15" name="Kefa-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="4LV-hn-zCJ" firstAttribute="top" secondItem="HMj-Mw-V3I" secondAttribute="bottom" constant="5" id="3xE-4m-qrU"/>
+                                            <constraint firstItem="QN6-Bv-CJY" firstAttribute="top" secondItem="YZB-K5-Zee" secondAttribute="bottom" constant="8" symbolic="YES" id="5PW-1r-mXG"/>
                                             <constraint firstAttribute="height" constant="1500" id="8St-dE-r8X"/>
+                                            <constraint firstItem="E8F-U5-jeJ" firstAttribute="top" secondItem="had-5Q-XQJ" secondAttribute="top" constant="28" id="8Vu-BC-417"/>
+                                            <constraint firstAttribute="trailing" secondItem="4LV-hn-zCJ" secondAttribute="trailing" constant="8" id="EUO-P6-gVt"/>
+                                            <constraint firstItem="4LV-hn-zCJ" firstAttribute="leading" secondItem="had-5Q-XQJ" secondAttribute="leading" constant="8" id="I7S-Kh-PSy"/>
+                                            <constraint firstItem="YZB-K5-Zee" firstAttribute="top" secondItem="4LV-hn-zCJ" secondAttribute="bottom" constant="-1" id="KCZ-8g-lxW"/>
+                                            <constraint firstItem="cwy-rM-LvQ" firstAttribute="leading" secondItem="had-5Q-XQJ" secondAttribute="leading" constant="8" id="L61-wH-K3Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="E8F-U5-jeJ" secondAttribute="trailing" constant="-47" id="Phx-H1-clD"/>
+                                            <constraint firstAttribute="trailing" secondItem="cwy-rM-LvQ" secondAttribute="trailing" constant="8" id="UDk-6o-ww9"/>
+                                            <constraint firstItem="HMj-Mw-V3I" firstAttribute="top" secondItem="had-5Q-XQJ" secondAttribute="top" constant="23" id="XTS-Zz-hVd"/>
+                                            <constraint firstItem="YZB-K5-Zee" firstAttribute="leading" secondItem="had-5Q-XQJ" secondAttribute="leading" constant="11" id="ZXN-JO-H7y"/>
+                                            <constraint firstAttribute="trailing" secondItem="YZB-K5-Zee" secondAttribute="trailing" constant="208" id="Zzd-0W-q4W"/>
+                                            <constraint firstItem="HMj-Mw-V3I" firstAttribute="leading" secondItem="had-5Q-XQJ" secondAttribute="leading" constant="11" id="cQM-pE-NDQ"/>
+                                            <constraint firstItem="vGc-jD-ro1" firstAttribute="leading" secondItem="had-5Q-XQJ" secondAttribute="leading" constant="11" id="r1K-Id-LwI"/>
+                                            <constraint firstItem="cwy-rM-LvQ" firstAttribute="top" secondItem="vGc-jD-ro1" secondAttribute="bottom" constant="8" symbolic="YES" id="w3L-lZ-MIR"/>
+                                            <constraint firstItem="vGc-jD-ro1" firstAttribute="top" secondItem="QN6-Bv-CJY" secondAttribute="bottom" constant="29" id="y4T-SM-smt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -247,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9O-AR-0Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="227"/>
+            <point key="canvasLocation" x="3336.8000000000002" y="226.84729064039411"/>
         </scene>
         <!--My Whiskeys View-->
         <scene sceneID="MkB-F4-qIx">
@@ -266,17 +327,17 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reviewedWhiskeyCell" id="oxk-G7-K06" customClass="ReviewedWhiskeyCollectionViewCell" customModule="WhiskeyPlease" customModuleProvider="target">
-                                <rect key="frame" x="108.66666666666667" y="20" width="158" height="291.33333333333331"/>
+                                <rect key="frame" x="108.66666666666667" y="20" width="158" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PWg-SJ-mj0">
-                                    <rect key="frame" x="0.0" y="0.0" width="158" height="291.33333333333331"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="158" height="291"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-nE-lv5">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="291.33333333333331"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="291"/>
                                             <subviews>
                                                 <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiskeyCell_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-d2-lnb">
-                                                    <rect key="frame" x="8" y="0.0" width="142" height="291.33333333333331"/>
+                                                    <rect key="frame" x="8" y="0.0" width="142" height="291"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xci-YU-ryI">
                                                     <rect key="frame" x="16" y="128" width="126" height="21"/>
@@ -341,15 +402,15 @@
                                             </constraints>
                                         </view>
                                         <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-VW-JPy">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="291.33333333333331"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="291"/>
                                             <subviews>
                                                 <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiskeyCell_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Q4F-aK-MAy">
-                                                    <rect key="frame" x="8" y="0.0" width="142" height="291.33333333333331"/>
+                                                    <rect key="frame" x="8" y="0.0" width="142" height="291"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whiskey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="20" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-9s-NLO">
-                                                    <rect key="frame" x="16.666666666666671" y="110" width="125.00000000000001" height="90"/>
+                                                    <rect key="frame" x="16.666666666666671" y="110" width="125.00000000000001" height="89.666666666666686"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="90" id="dXg-u8-Lr5"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="dXg-u8-Lr5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="35"/>
                                                     <color key="textColor" name="titleColor"/>
@@ -358,7 +419,7 @@
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVP-jg-1hU">
-                                                    <rect key="frame" x="23" y="205" width="112" height="21"/>
+                                                    <rect key="frame" x="23" y="204.66666666666666" width="112" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="WMk-F5-Pyp"/>
                                                     </constraints>
@@ -367,7 +428,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-zd-GF8">
-                                                    <rect key="frame" x="42.333333333333336" y="234.00000000000003" width="73.333333333333314" height="47.333333333333343"/>
+                                                    <rect key="frame" x="42.333333333333336" y="233.66666666666666" width="73.333333333333314" height="47.333333333333343"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="47.333333333333371" id="Bh0-NS-GGK"/>
                                                     </constraints>
@@ -378,7 +439,7 @@
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seq-fH-2Uw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="291.33333333333331"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="158" height="291"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain"/>
                                                     <connections>
@@ -1085,13 +1146,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btA-gk-EBe">
-                                <rect key="frame" x="104.33333333333333" y="123" width="166.33333333333337" height="43"/>
+                                <rect key="frame" x="104.33333333333333" y="123" width="166.33333333333337" height="157"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="37"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of reviewed whiskeys: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-d2-IZW">
-                                <rect key="frame" x="16" y="309" width="343" height="24"/>
+                                <rect key="frame" x="16" y="389" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Vye-hO-1sJ"/>
                                 </constraints>
@@ -1100,7 +1161,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-44-ZQs">
-                                <rect key="frame" x="16" y="341" width="343" height="24"/>
+                                <rect key="frame" x="16" y="421" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="tlr-6C-PRp"/>
                                 </constraints>
@@ -1109,7 +1170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All ratings summed up:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-bz-gfa">
-                                <rect key="frame" x="16" y="373" width="343" height="24"/>
+                                <rect key="frame" x="16" y="453" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="cuX-R6-tsE"/>
                                 </constraints>
@@ -1118,7 +1179,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest review: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-rh-01U">
-                                <rect key="frame" x="16" y="405" width="343" height="24"/>
+                                <rect key="frame" x="16" y="485" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="vz3-4n-jtt"/>
                                 </constraints>
@@ -1140,7 +1201,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6s-Eg-Zsx">
-                                <rect key="frame" x="145" y="260" width="85" height="29"/>
+                                <rect key="frame" x="145" y="340" width="85" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="uDo-N4-8fV"/>
                                 </constraints>
@@ -1162,7 +1223,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account created at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-t9-kHh">
-                                <rect key="frame" x="16" y="437" width="343" height="24"/>
+                                <rect key="frame" x="16" y="517" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="xK2-PY-ie8"/>
                                 </constraints>
@@ -1171,10 +1232,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrW-oc-DOE">
-                                <rect key="frame" x="275.33333333333331" y="125" width="51.333333333333314" height="44"/>
+                                <rect key="frame" x="278.66666666666669" y="183.66666666666666" width="50.666666666666686" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8yM-OA-Xsn"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="fUT-rb-K3T"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Ol9-wS-cYe"/>
+                                    <constraint firstAttribute="height" constant="44" id="sja-Kg-B1O"/>
                                 </constraints>
                                 <color key="tintColor" name="textColor"/>
                                 <state key="normal" title="Button"/>
@@ -1196,27 +1257,27 @@
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="N8E-t9-kHh" secondAttribute="trailing" constant="16" id="DwQ-dP-6Bm"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="bottom" secondItem="TE6-SS-j2V" secondAttribute="bottom" constant="20" id="FIa-Xt-PBK"/>
                             <constraint firstItem="tZQ-LY-Eeu" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="GHJ-Ja-RG9"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="trailing" constant="8" symbolic="YES" id="Jjr-v8-NyL"/>
                             <constraint firstItem="TE6-SS-j2V" firstAttribute="top" secondItem="tZQ-LY-Eeu" secondAttribute="bottom" constant="20" id="OHt-Wq-VVy"/>
                             <constraint firstItem="N8E-t9-kHh" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="PHQ-CR-29D"/>
                             <constraint firstItem="xIM-bz-gfa" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="U2P-mZ-8eH"/>
-                            <constraint firstItem="SrW-oc-DOE" firstAttribute="leading" secondItem="btA-gk-EBe" secondAttribute="trailing" constant="4.6666666666666856" id="Vw2-eK-4If"/>
                             <constraint firstItem="btA-gk-EBe" firstAttribute="top" secondItem="b1P-pz-xUJ" secondAttribute="top" constant="32" id="Wee-wa-LDF"/>
                             <constraint firstItem="YY3-44-ZQs" firstAttribute="top" secondItem="ndf-d2-IZW" secondAttribute="bottom" constant="8" symbolic="YES" id="a4F-ZD-Oe8"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="ndf-d2-IZW" secondAttribute="trailing" constant="16" id="aFf-38-bhL"/>
-                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="top" relation="lessThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="bottom" constant="112" id="aLI-On-Wbx"/>
+                            <constraint firstItem="t6s-Eg-Zsx" firstAttribute="top" relation="lessThanOrEqual" secondItem="btA-gk-EBe" secondAttribute="bottom" constant="60" id="aLI-On-Wbx"/>
                             <constraint firstItem="ndf-d2-IZW" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="afI-yf-2EB"/>
                             <constraint firstItem="TE6-SS-j2V" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="bni-L9-VkQ"/>
                             <constraint firstItem="btA-gk-EBe" firstAttribute="centerX" secondItem="Kvh-NX-lvn" secondAttribute="centerX" id="cKN-wm-ZHs"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="xIM-bz-gfa" secondAttribute="trailing" constant="16" id="gAT-Ve-pKu"/>
                             <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="YY3-44-ZQs" secondAttribute="trailing" constant="16" id="gGB-af-bbd"/>
                             <constraint firstItem="ndf-d2-IZW" firstAttribute="top" secondItem="t6s-Eg-Zsx" secondAttribute="bottom" constant="20" id="hSe-cy-rCd"/>
+                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" secondItem="SrW-oc-DOE" secondAttribute="trailing" constant="45.666666666666686" id="k5I-QT-KZ7"/>
                             <constraint firstItem="PVJ-rh-01U" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="oIw-DL-pH5"/>
-                            <constraint firstItem="tZQ-LY-Eeu" firstAttribute="top" secondItem="N8E-t9-kHh" secondAttribute="bottom" constant="140" id="oRO-RK-HgI"/>
+                            <constraint firstItem="tZQ-LY-Eeu" firstAttribute="top" relation="lessThanOrEqual" secondItem="N8E-t9-kHh" secondAttribute="bottom" constant="60" id="oRO-RK-HgI"/>
                             <constraint firstItem="YY3-44-ZQs" firstAttribute="leading" secondItem="b1P-pz-xUJ" secondAttribute="leading" constant="16" id="p8M-Hm-7Nd"/>
                             <constraint firstItem="xIM-bz-gfa" firstAttribute="top" secondItem="YY3-44-ZQs" secondAttribute="bottom" constant="8" symbolic="YES" id="pAT-36-dqX"/>
-                            <constraint firstItem="SrW-oc-DOE" firstAttribute="top" secondItem="b1P-pz-xUJ" secondAttribute="top" constant="34" id="qde-Ak-NjN"/>
                             <constraint firstItem="N8E-t9-kHh" firstAttribute="top" secondItem="PVJ-rh-01U" secondAttribute="bottom" constant="8" symbolic="YES" id="rSS-Wy-fLQ"/>
-                            <constraint firstItem="b1P-pz-xUJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SrW-oc-DOE" secondAttribute="trailing" symbolic="YES" id="yyu-cf-Kbt"/>
+                            <constraint firstItem="SrW-oc-DOE" firstAttribute="centerY" secondItem="btA-gk-EBe" secondAttribute="centerY" constant="4" id="wpt-jB-gpH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RLP-g8-Ruo"/>
@@ -1259,7 +1320,7 @@
                                 <color key="textColor" name="detailViewBackground"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more info contact me at: github.com/JakubPrusGitHub" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuC-K8-4ox">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more info contact me at: jakub.prus.biznes@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuC-K8-4ox">
                                 <rect key="frame" x="16" y="274" width="343" height="46.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" name="detailViewBackground"/>
