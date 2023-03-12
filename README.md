@@ -19,13 +19,15 @@ WhiskeyPlease is an iOS application that introduces users to the world of whiske
 
 As an young adult I became interested in the world of alcohols, especially whiskeys. That passion lead to creating simple, but useful application for beginners to discover new liquors and save their opinion. It took me about a month to finish this project and with that done I'm happy to finally present it and start using it! <br><br>
 
-<h2> Presentation 📲</h2><br>
-
+<h2> Presentation 📲</h2>
+[some gifs doesn't replay automatically]<br>
 
 
 <h3> Article view 📚</h3>
-Each article has a topic, image, short description, history, and ingredients. In the table view cell, we can only see the image, name, and brief description. <br><br>
-After clicking on an article, a detailed view is presented with more information such as an extended description, full history, and icons with used ingredients. <br><br>
+
+* Each article has a topic, image, short description, history, and ingredients. In the table view cell, we can only see the image, name, and brief description. <br><br>
+* After clicking on an article, a detailed view is presented with more information such as an extended description, full history, and icons with used ingredients. <br><br>
+
 <p float="left">
   <img src="https://user-images.githubusercontent.com/56788369/224166035-a68fdf8c-e707-4f5a-8886-66e89c166beb.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224167179-638dbabe-7f92-44ed-8d79-6f03e62e0581.png" width=24% /> 
@@ -36,10 +38,11 @@ After clicking on an article, a detailed view is presented with more information
 
 
 <h3> Reviews view 📝</h3>
-User can easily add a new review by clicking the plus button and filling up the form. All fields are required to proceed. After adding, user can tap on the whiskey icon to reveal the back of the liquor, for additional information. <br><br>
-User can edit their reviews by enabling edit mode in the top-left corner. After switching it on, the icons will shake and be ready to edit. <br><br>
-Tapping on whiskeys in edit mode will present a sheet with the possibility to change all fields and delete the review. Clicking the "Done" button will finish editing and save a new review. Deleting a review will trash the review and save it. <br><br>
-All reviews and statistics will automatically be updated and saved after all interactions. <br><br>
+
+* User can easily add a new review by clicking the plus button and filling up the form. All fields are required to proceed. After adding, user can tap on the whiskey icon to reveal the back of the liquor, for additional information. <br><br>
+* User can edit their reviews by enabling edit mode in the top-left corner. After switching it on, the icons will shake and be ready to edit. <br><br>
+* Tapping on whiskeys in edit mode will present a sheet with the possibility to change all fields and delete the review. Clicking the "Done" button will finish editing and save a new review. Deleting a review will trash the review and save it. <br><br>
+[All reviews and statistics will automatically be updated and saved after all interactions.] <br><br>
 <p float="left">
   <img src="https://user-images.githubusercontent.com/56788369/224170088-b2f56a5f-50d7-46a3-b0d3-96f37586d08e.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224171064-5aed3d79-10f3-4266-8224-1b78926afd21.gif" width=24% />
@@ -50,11 +53,11 @@ All reviews and statistics will automatically be updated and saved after all int
 
 
 <h3> Profile view 👤</h3>
-Here you can track your statistics, change your username, read info about the application, and delete all reviews. <br><br>
-Changing the username is done by clicking on a button on the right of the username and then providing a new name in the popup alert. <br><br>
-All statistics are refreshed after user interaction. Statistics contain information about the number of reviews, average rating, all ratings summed up, highest-rated whiskey, and the date when the account was created. <br><br>
-User can read additional information after clicking the "About" button, which presents a small sheet with application description, articles sources, and provide contact to the developer. <br><br>
-On the very bottom located is the "Delete reviews" button, which erases all data from the user. Warning! This action cannot be undone! <br><br>
+
+* Here you can track your statistics, change your username, read info about the application, and delete all reviews. <br><br>
+* Changing the username is done by clicking on a button on the right of the username and then providing a new name in the popup alert. <br><br>
+* All statistics are refreshed after user interaction. Statistics contain information about the number of reviews, average rating, all ratings summed up, highest-rated whiskey, and the date when the account was created. <br><br>
+* User can read additional information and delete all reviews after clicking the corresponding buttons.<br><br>
 <p float="left">
   <img src="https://user-images.githubusercontent.com/56788369/224175457-ad7481eb-6d58-4730-941b-7849bbec0464.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224175530-e7180819-9dcb-44d9-97e8-04b18d05aa82.png" width=24% /> 
