@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoadArticles: NSObject {
+class LoadArticlesFromJSON: NSObject {
     
     var allArticles: [Article]
     

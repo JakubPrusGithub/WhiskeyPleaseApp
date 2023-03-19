@@ -12,6 +12,17 @@ import UIKit
 class AllReviewedWhiskeys {
     
     static let shared = AllReviewedWhiskeys()
+    lazy var persistentContainer: NSPersistentContainer = {
+
+        let container = NSPersistentContainer(name: "WhiskeyPlease")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error {
+
+                fatalError("Unresolved error, \((error as NSError).userInfo)")
+            }
+        })
+        return container
+    }()
     
     var allReviewedWhiskeys: [ReviewedWhiskey]
     var profileNickname: String
@@ -26,7 +37,7 @@ class AllReviewedWhiskeys {
         self.createdDate = today
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let requestWhiskey = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
         do{
             let results: NSArray = try context.fetch(requestWhiskey) as NSArray
@@ -57,7 +68,7 @@ class AllReviewedWhiskeys {
     
     func addReview(_ review: ReviewedWhiskey){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Whiskey", in: context)
         let newReview = Whiskey(entity: entity!, insertInto: context)
         newReview.whiskeyName = review.whiskeyName
@@ -84,7 +95,7 @@ class AllReviewedWhiskeys {
             }
         }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
         do{
             let results: NSArray = try context.fetch(request) as NSArray
@@ -115,7 +126,7 @@ class AllReviewedWhiskeys {
         }
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
         do{
             let results: NSArray = try context.fetch(request) as NSArray
@@ -137,7 +148,7 @@ class AllReviewedWhiskeys {
         self.allReviewedWhiskeys = []
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Whiskey")
         do{
             let results: NSArray = try context.fetch(request) as NSArray
@@ -155,7 +166,7 @@ class AllReviewedWhiskeys {
     func changeNickname(nickname: String){
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let context: NSManagedObjectContext = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Profile")
         do{
             let results: NSArray = try context.fetch(request) as NSArray

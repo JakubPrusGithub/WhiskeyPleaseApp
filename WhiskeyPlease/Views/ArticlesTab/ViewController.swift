@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UITableViewController{
     
-    let articles = LoadArticles()
+    let articles = LoadArticlesFromJSON()
 
     override func viewDidLoad() {
         super.viewDidLoad()
