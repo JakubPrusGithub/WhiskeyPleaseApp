@@ -28,12 +28,12 @@ As an young adult I became interested in the world of alcohols, especially whisk
 * Each article has a topic, image, short description, history, and ingredients. In the table view cell, we can only see the image, name, and brief description. <br><br>
 * After clicking on an article, a detailed view is presented with more information such as an extended description, full history, and icons with used ingredients. <br><br>
 
-<p float="left">
+<div float="left">
   <img src="https://user-images.githubusercontent.com/56788369/224166035-a68fdf8c-e707-4f5a-8886-66e89c166beb.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224167179-638dbabe-7f92-44ed-8d79-6f03e62e0581.png" width=24% /> 
   <img src="https://user-images.githubusercontent.com/56788369/224167237-d15b17eb-3cdb-445a-bd86-57e79f458790.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224168399-d4a9607a-0326-4997-b672-0ff2188764e8.gif" width=24% />
-</p><br><br><br><br>
+</div><br><br><br><br>
 
 
 
@@ -47,7 +47,7 @@ As an young adult I became interested in the world of alcohols, especially whisk
   <img src="https://user-images.githubusercontent.com/56788369/224170088-b2f56a5f-50d7-46a3-b0d3-96f37586d08e.png" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224171064-5aed3d79-10f3-4266-8224-1b78926afd21.gif" width=24% />
   <img src="https://user-images.githubusercontent.com/56788369/224171171-fc8e2311-1aa3-41a3-862d-8d1704d184a2.gif" width=24% />
-  <img src="https://user-images.githubusercontent.com/56788369/224171207-7f2c6513-5c57-4aff-87e3-c7908fcab767.gif" width=24% />
+  <gif src="https://user-images.githubusercontent.com/56788369/224171207-7f2c6513-5c57-4aff-87e3-c7908fcab767.gif" width=24% />
 </p><br><br><br><br>
 
 
